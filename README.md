@@ -18,7 +18,7 @@ aws-scenario/how-to-iam-management
 ```
 ### git開発戦略
 * 基本はgit-flow
-* 開発単位ごとにfeatureブランチを作成し作業
+* 開発単位ごとにfeatureブランチを作成し作業（個人用なのでmaster直でも良いがgitの使い方・コマンド忘れないように）
 * 個人用なのでdevelop/hotfix/releaseは採用しない
 
 <script src="https://blz-soft.github.io/md_style/release/v1.2/md_style.js" ></script>
