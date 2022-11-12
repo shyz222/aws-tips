@@ -1,7 +1,6 @@
 # interoperation-btwn-s3-gcs
 ## 目的
 * boto3を用いてs3-gcs間でオブジェクトを転送するlambdaを作成する
-***
 ## 背景
 * パブリッククラウド間のデータ転送を実現するサービスは下記がある
     * [AWS DataSync](https://aws.amazon.com/jp/blogs/news/migrating-google-cloud-storage-to-amazon-s3-using-aws-datasync/)
