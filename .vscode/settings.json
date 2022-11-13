@@ -4,4 +4,5 @@
     "pasteImage.prefix":"./", //pathの調整
     "pasteImage.showFilePathConfirmInputBox":true,// ペースト時にファイル名を変更する
     "pasteImage.filePathConfirmInputBoxMode":"onlyName",
+    "pasteImage.insertPattern": "<img src='${imageFileName}' width='100%'>"
     }
