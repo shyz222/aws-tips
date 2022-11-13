@@ -37,7 +37,7 @@
         >    1. ユーザーをグループに追加
         >    1. ユーザーの有効化およびパスワード設定
         >    1. アクセス権限セットのユーザー/グループへの割り当て
-<img src='README_2022-11-13-16-59-26.png' width='50%'>
+
 
 * 一方でマルチアカウントは難しいという声もある。
     * 具体的には
@@ -54,6 +54,7 @@
         >* 「どのアカウントかぱっと見て分からない」問題
         >* 「Security Hub のコントロールが増えすぎ」問題
 
+<img src='./img/README_2022-11-13-17-08-17.png' width='50%' style='display: block; margin: auto;'>
 
 * ref
     * [スタートアップにおけるマルチアカウントの考え方と AWS Control Tower のすゝめ](https://aws.amazon.com/jp/blogs/startup/multi-accounts-and-control-tower/)
