@@ -54,7 +54,7 @@
         >* 「どのアカウントかぱっと見て分からない」問題
         >* 「Security Hub のコントロールが増えすぎ」問題
 
-<p align='center'><img src='./img/README_2022-11-13-17-14-29.png' width='50%'></p>
+<p align='center'><img src='./img/README_2022-11-13-17-14-29.png' width='70%'></p>
 
 * ref
     * [スタートアップにおけるマルチアカウントの考え方と AWS Control Tower のすゝめ](https://aws.amazon.com/jp/blogs/startup/multi-accounts-and-control-tower/)
