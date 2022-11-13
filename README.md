@@ -13,7 +13,7 @@ scenario/{scenarioDetail}
 ```
 EC2
 Lambda
-scenario/how-to-iam-management
+scenario/how-to-manage-multi-account
 ```
 ### git開発戦略
 * 基本はgit-flow
