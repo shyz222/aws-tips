@@ -54,7 +54,6 @@
         >* 「どのアカウントかぱっと見て分からない」問題
         >* 「Security Hub のコントロールが増えすぎ」問題
 
-<!-- <img src='./img/README_2022-11-13-17-08-17.png' width='50%' style='display: block; margin: auto;'> -->
 <p align='center'><img src='./img/README_2022-11-13-17-14-29.png' width='50%'></p>
 
 * ref
