@@ -6,6 +6,5 @@
     "pasteImage.filePathConfirmInputBoxMode":"onlyName",
     // "pasteImage.insertPattern": "<img src='${imageFileName}' width='100%'>"
     // "pasteImage.insertPattern": "<img src='./img/${imageFileName}' width='100%'>"
-    // "pasteImage.insertPattern": "<img src='./img/${imageFileName}' width='50%' style='display: block; margin: auto;'>"
     "pasteImage.insertPattern": "<p align='center'><img src='./img/${imageFileName}' width='50%''></p>"
     }
