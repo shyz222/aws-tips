@@ -1,0 +1,7 @@
+{
+    "pasteImage.namePrefix": "${currentFileNameWithoutExt}_",// デフォルトのファイル名の頭にmarkdown名をつける
+    "pasteImage.path": "${currentFileDir}/img",//(markdownファイルのディレクトリ内)/img内に画像を保存
+    "pasteImage.prefix":"./", //pathの調整
+    "pasteImage.showFilePathConfirmInputBox":true,// ペースト時にファイル名を変更する
+    "pasteImage.filePathConfirmInputBoxMode":"onlyName",
+    }
