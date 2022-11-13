@@ -1,19 +1,19 @@
-# aws-tips
+# aws
 ## 目的
-* 業務またはプライベートで学んだ内容のアウトプット・備忘録
+* awsに関して業務またはプライベートで学んだ内容のアウトプット・備忘録
 ## ルール
 ### ディレクトリ
-* prefixはaws-
 * サービス単体に関する内容はサービス名
 * 複数のサービスを組み合わせた内容やシナリオ/ユースケースに沿う内容はシナリオ名
 ```
-aws-{serviceName}
-aws-scenario/{scenarioDetail}
+{serviceName}
+scenario/{scenarioDetail}
 ```
 * ex
 ```
-aws-EC2
-aws-scenario/how-to-iam-management
+EC2
+Lambda
+scenario/how-to-iam-management
 ```
 ### git開発戦略
 * 基本はgit-flow
