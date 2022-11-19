@@ -121,3 +121,11 @@
     * ref
         * [AWSを活用してゲームサーバーのコストを劇的に下げるスポットインスタンスを効果的に使うための基礎知識](https://logmi.jp/tech/articles/321685)
         * [AWSコスト削減のためのスポットインスタンス活用術](https://www.stylez.co.jp/columns/how_to_use_spot_instances_to_reduce_aws_costs/#i-7)
+* AWS SSOの管理方法
+    * アクセス権限セットを使用して管理アカウントからユーザーごとのアクセス権限を一元管理する
+        * AWS SSOで設定したアクセス権限セットは、AWSアカウントではIAMロールとして設定されユーザーに複数割り当てることが可能
+        * ユーザーはそこから1つのアクセス権限セット（IAMロール）を選択してAWS SSOユーザポータルにサインインする
+    <p align='center'><img src='./img/README_2022-11-19-17-42-02.png' width='70%'></p>
+    
+    * ref
+        * [え、IAM ユーザーを作らなくてもマネジメントコンソールにログインできるの!? – シングルサインオン考え方編](https://aws.amazon.com/jp/blogs/startup/techblog-iam-sso-concept/)
