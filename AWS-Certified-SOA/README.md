@@ -136,7 +136,6 @@
         1. リソースベース
             * S3のバケットポリシーなどAWSリソースにアタッチされるもの
             * どんなのがあるかは[IAMと連携するAWSのサービス](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html)参照
-        
 * S3のクロスアカウントアクセス
     * S3バケットのアクセス制御をする機能
         1. リソースベース
@@ -155,3 +154,21 @@
             >* すべての AWS サービスがリソースベースのポリシーをサポートしているわけではありません。そのため、複数のサービスへのクロスアカウントアクセスを提供するときに、クロスアカウントの IAM ロールを使用してアクセス許可の管理を一元化できます。
         * ref
             * [Simple Storage Service (Amazon S3) バケット内のオブジェクトへのクロスアカウントアクセスを提供するにはどうすればよいですか?](https://aws.amazon.com/jp/premiumsupport/knowledge-center/cross-account-access-s3/)
+* ネットワークに関するログ
+    * webアプリケーションをCloutFront,ALB,EC2,RDSで構成している場合、ネットワークに関するログはどこからどんな情報が取得できるか
+        * CloudFront
+            * HTTP/HTTPSのステータスコード(L7)
+        * ALB
+            * HTTP/HTTPSのステータスコード(L7)
+        * VPC
+            * IPトラフィックログ(L4)
+* AWSリソースのサービス制限の状況を確認するサービス
+    1. AWS Trusted Advisor
+        * ベストプラクティスをもとにパフォーマンス・セキュリティ・耐障害性・サービスの制限に関する斉唱事項をチェックするサービス
+        * CloudWatchと連携すると、サービス制限の使用率を閾値にしてアラート作成が可能（ビジネス・エンタープライズサポートプラン）
+    1. AWS Service Quotas
+        * サービス制限値の確認と上限緩和申請をするサービス
+        * CloudWatchと連携すると、サービス制限の制限値を閾値にしてアラート作成が可能
+* Auto Scaling
+    * ライフサイクルフック
+        * ASGでスケールアウト/インすが発生した時にインスタンスが追加/削除される前に実行されるフックイベント
