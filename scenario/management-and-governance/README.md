@@ -65,5 +65,3 @@
 * [え、IAM ユーザーを作らなくてもマネジメントコンソールにログインできるの!? – シングルサインオン考え方編](https://aws.amazon.com/jp/blogs/startup/techblog-iam-sso-concept/)
 * [え、IAM ユーザーを作らなくてもマネジメントコンソールにログインできるの!? – シングルサインオン実践編](https://aws.amazon.com/jp/blogs/startup/techblog-iam-sso-practice/)
 
-
-<script src="https://blz-soft.github.io/md_style/release/v1.2/md_style.js" ></script>
