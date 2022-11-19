@@ -129,3 +129,29 @@
     
     * ref
         * [え、IAM ユーザーを作らなくてもマネジメントコンソールにログインできるの!? – シングルサインオン考え方編](https://aws.amazon.com/jp/blogs/startup/techblog-iam-sso-concept/)
+* [アイデンティティベースおよびリソースベースのポリシー](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/access_policies_identity-vs-resource.html)
+    * AWSのポリシーには大きく２種類存在
+        1. アイデンティティベース
+            * IAMユーザー・グループ・ロールにアタッチされるもの
+        1. リソースベース
+            * S3のバケットポリシーなどAWSリソースにアタッチされるもの
+            * どんなのがあるかは[IAMと連携するAWSのサービス](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html)参照
+        
+* S3のクロスアカウントアクセス
+    * S3バケットのアクセス制御をする機能
+        1. リソースベース
+            1. ACL
+            1. バケットポリシー
+            1. アクセスポイント
+        1. アイデンティティベース
+            1. IAM
+    * クロスアカウントの設定には次のいずれかを使用する
+        1. アイデンティティベース+リソースベース
+            1. アクセス先のAWSアカウントのS3バケットのバケットポリシーで、アクセス元のAWSアカウントのIAMロールまたはIAMユーザーのアクセスを許可する
+            1. アクセス先のAWSアカウントのS3バケットのACLで、アクセス元のAWSアカウント空のアクセスを許可する
+        1. アイデンティティベースのみ
+            1. アクセス先のAWSアカウントのIAMロールで、アクセス元のAWSアカウント空のクロスアカウントIAMロールを引き受ける許可をする
+        * 選定基準
+            >* すべての AWS サービスがリソースベースのポリシーをサポートしているわけではありません。そのため、複数のサービスへのクロスアカウントアクセスを提供するときに、クロスアカウントの IAM ロールを使用してアクセス許可の管理を一元化できます。
+        * ref
+            * [Simple Storage Service (Amazon S3) バケット内のオブジェクトへのクロスアカウントアクセスを提供するにはどうすればよいですか?](https://aws.amazon.com/jp/premiumsupport/knowledge-center/cross-account-access-s3/)
