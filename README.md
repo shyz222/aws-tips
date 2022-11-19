@@ -5,15 +5,18 @@
 ### ディレクトリ
 * サービス単体に関する内容はサービス名
 * 複数のサービスを組み合わせた内容やシナリオ/ユースケースに沿う内容はシナリオ名
+* 認定試験対策で調べた内容は認定試験名
 ```
 {serviceName}
 scenario/{scenarioDetail}
+{certificationExamName}
 ```
 * ex
 ```
 EC2
 Lambda
 scenario/how-to-manage-multi-account
+AWS-Certified-SAP
 ```
 ### git開発戦略
 * 基本はgit-flow
