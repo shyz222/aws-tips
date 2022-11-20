@@ -1,4 +1,24 @@
-# AWS-Certified-SOA
+- [目的](#目的)
+- [背景](#背景)
+- [学習教材](#学習教材)
+- [学習内容（知らなかったことを箇条書きしておく）](#学習内容知らなかったことを箇条書きしておく)
+  - [VPCフローログの見方](#vpcフローログの見方)
+  - [ELBとRoute53のヘルスチェック機能の違い](#elbとroute53のヘルスチェック機能の違い)
+  - [Lambdaのスケーリング](#lambdaのスケーリング)
+  - [S3バケット・オブジェクトの削除](#s3バケットオブジェクトの削除)
+  - [AWS <Service/Personal> Health Dasheboard](#aws-servicepersonal-health-dasheboard)
+  - [AWS Organizationの機能セット](#aws-organizationの機能セット)
+  - [EBSストレージサイズ変更](#ebsストレージサイズ変更)
+  - [Amzon ElastiCache](#amzon-elasticache)
+  - [EC2インスタンスのコスト削減](#ec2インスタンスのコスト削減)
+  - [AWS SSOの管理方法](#aws-ssoの管理方法)
+  - [アイデンティティベースおよびリソースベースのポリシー](#アイデンティティベースおよびリソースベースのポリシー)
+  - [S3のクロスアカウントアクセス](#s3のクロスアカウントアクセス)
+  - [ネットワークに関するログ](#ネットワークに関するログ)
+  - [AWSリソースのサービス制限の状況を確認するサービス](#awsリソースのサービス制限の状況を確認するサービス)
+  - [Auto Scaling](#auto-scaling)
+  - [Cfnのデプロイ失敗時のトラブルシュート](#cfnのデプロイ失敗時のトラブルシュート)
+  - [Auto Scalingのヘルスチェック](#auto-scalingのヘルスチェック)
 ## 目的
 * AWSのOperation/Security/Governance関連の知識習得
 ## 背景
