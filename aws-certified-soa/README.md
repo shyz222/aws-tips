@@ -206,8 +206,8 @@
     - インスタンスが実行中であるかどうか
     - ハードウェア・OS・リソースの過剰使用率をチェック
 1. ELBヘルスチェック
-    - a
-1. カスタムヘルスチェック
-    - a
+    - 詳細は[ELBとRoute53のヘルスチェック機能の違い](#elbとroute53のヘルスチェック機能の違い)
+2. カスタムヘルスチェック
+    - 詳細はref参照
 - ref
     - [Auto Scaling インスタンスのヘルスチェック](https://docs.aws.amazon.com/ja_jp/autoscaling/ec2/userguide/ec2-auto-scaling-health-checks.html)

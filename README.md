@@ -28,3 +28,4 @@ aws-certified-sap
 - 基本はgit-flow
 - 開発単位ごとにfeatureブランチを作成し作業（個人用なのでmaster直でも良いがgitの使い方・コマンド忘れないように）
 - 個人用なのでdevelop/hotfix/releaseは採用しない
+- ブランチ名は小文字とアンダースコア
