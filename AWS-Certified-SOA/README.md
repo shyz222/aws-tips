@@ -41,15 +41,16 @@
 * AWS Service Personal Dasheboard
     * AWSアカウント内で利用しているサービス・リージョン・リソースなどの状態がわかるサービス
 ### AWS Organizationの機能セット
-    * 一括請求機能（Consolidated Billing）
-        * メンバーアカウントの請求管理のみを管理アカウントに統合することができる
-    * すべての機能
-        * メンバーアカウントの請求管理のAWSリソース権限管理なども管理アカウントに統合することができる
-    * 請求管理は統合したいがAWSリソース管理は独立させたい場合一括請求機能が適切
-    * 「一括請求機能」から「すべての機能」へは後からも変更できる
-    * ref
-        * [組織内のすべての機能の有効化](https://docs.aws.amazon.com/ja_jp/organizations/latest/userguide/orgs_manage_org_support-all-features.html)
-### EBSストレージサイズを大きくした場合、EC2のOSでボリュームのファイルシステムを拡張する（マウントする）必要がある
+* 一括請求機能（Consolidated Billing）
+    * メンバーアカウントの請求管理のみを管理アカウントに統合することができる
+* すべての機能
+    * メンバーアカウントの請求管理のAWSリソース権限管理なども管理アカウントに統合することができる
+* 請求管理は統合したいがAWSリソース管理は独立させたい場合一括請求機能が適切
+* 「一括請求機能」から「すべての機能」へは後からも変更できる
+* ref
+    * [組織内のすべての機能の有効化](https://docs.aws.amazon.com/ja_jp/organizations/latest/userguide/orgs_manage_org_support-all-features.html)
+### EBSストレージサイズ変更
+* ストレージサイズ大きくした場合、EC2のOSでボリュームのファイルシステムを拡張する（マウントする）必要がある
 ### Amzon ElastiCache
 * MemcachedまたはRedisプロトコルに準拠したインメモリデータベース
 * セッション管理やRDS、Auroraのデータのキャッシュによく利用される
