@@ -11,6 +11,7 @@
 * ELBとRoute53のヘルスチェック機能の違い
     * ELB
         * http/httpsを指定している場合パスを指定してヘルスチェック可能
+            * [ターゲットグループのヘルスチェック](https://docs.aws.amazon.com/ja_jp/elasticloadbalancing/latest/application/target-group-health-checks.html)
         * ステータスコードの確認のみ
     * Route53
         * ELBのヘルスチェック機能をドメイン名にも適用させてようなかんじ
@@ -171,4 +172,19 @@
         * CloudWatchと連携すると、サービス制限の制限値を閾値にしてアラート作成が可能
 * Auto Scaling
     * ライフサイクルフック
-        * ASGでスケールアウト/インすが発生した時にインスタンスが追加/削除される前に実行されるフックイベント
+        * ASGでスケールアウト/インが発生した時にインスタンスが追加/削除される前に実行されるフックイベント
+* Cfnのデプロイ失敗時のトラブルシュート
+    * スタックを作成したIAMユーザーに、スタック内のAWSリソースに対する権限がない
+    * Cfnサービスロールに、スタック内のAWSリソースに対する権限がない
+    * 他のリージョンではデプロイできていたテンプレートがデプロイに失敗した場合なども上記が考えられる
+        * 他のリージョンにはないAWSサービスが記載されている場合もあり得る
+* Auto Scalingのヘルスチェック
+    1. EC2ステータスヘルスチェック（デフォルト）
+        * インスタンスが実行中であるかどうか
+        * ハードウェア・OS・リソースの過剰使用率をチェック
+    1. ELBヘルスチェック
+        * 
+    1. カスタムヘルスチェック
+        * 
+    * ref
+        * [Auto Scaling インスタンスのヘルスチェック](https://docs.aws.amazon.com/ja_jp/autoscaling/ec2/userguide/ec2-auto-scaling-health-checks.html)
