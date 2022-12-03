@@ -8,7 +8,7 @@
   - [ELBとRoute53のヘルスチェック機能の違い](#elbとroute53のヘルスチェック機能の違い)
   - [Lambdaのスケーリング](#lambdaのスケーリング)
   - [S3バケット・オブジェクトの削除](#s3バケットオブジェクトの削除)
-  - [AWS <Service/Personal> Health Dasheboard](#aws-servicepersonal-health-dasheboard)
+  - [AWS \<Service/Personal\> Health Dasheboard](#aws-servicepersonal-health-dasheboard)
   - [AWS Organizationの機能セット](#aws-organizationの機能セット)
   - [EBSストレージサイズ変更](#ebsストレージサイズ変更)
   - [Amzon ElastiCache](#amzon-elasticache)
@@ -21,6 +21,7 @@
   - [Auto Scaling](#auto-scaling)
   - [Cfnのデプロイ失敗時のトラブルシュート](#cfnのデプロイ失敗時のトラブルシュート)
   - [Auto Scalingのヘルスチェック](#auto-scalingのヘルスチェック)
+    - [](#)
 
 # 目的
 - AWSのOperation/Security/Governance関連の知識習得
@@ -185,8 +186,8 @@
 - クロスアカウントの設定には次のいずれかを使用する
     1. アイデンティティベース+リソースベース
         1. アクセス先のAWSアカウントのS3バケットのバケットポリシーで、アクセス元のAWSアカウントのIAMロールまたはIAMユーザーのアクセスを許可する
-        1. アクセス先のAWSアカウントのS3バケットのACLで、アクセス元のAWSアカウント空のアクセスを許可する
-    1. アイデンティティベースのみ
+        2. アクセス先のAWSアカウントのS3バケットのACLで、アクセス元のAWSアカウント空のアクセスを許可する
+    2. アイデンティティベースのみ
         1. アクセス先のAWSアカウントのIAMロールで、アクセス元のAWSアカウント空のクロスアカウントIAMロールを引き受ける許可をする
     - 選定基準
         >- すべての AWS サービスがリソースベースのポリシーをサポートしているわけではありません。そのため、複数のサービスへのクロスアカウントアクセスを提供するときに、クロスアカウントの IAM ロールを使用してアクセス許可の管理を一元化できます。
