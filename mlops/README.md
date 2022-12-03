@@ -20,7 +20,6 @@
 
 # 学習内容
 - AI/MLシステムの基本的なワークフロー
-  - <p align='center'><img src='./img/README_2022-12-03-16-12-44.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2022-12-03-16-11-12.png' width='70%'></p>
   - ref
     - [GoogleCloudで機械学習を実装するためのベストプラクティス](https://cloud.google.com/architecture/ml-on-gcp-best-practices?hl=ja#machine-learning-workflow-orchestration)
@@ -41,3 +40,12 @@
    - <p align='center'><img src='./img/README_2022-12-03-16-06-04.png' width='70%'></p>
    - ref
      - [AWSで構築するMLOps基盤](https://pages.awscloud.com/rs/112-TZM-766/images/20201015_AWS%E3%81%A6%E3%82%99%E6%A7%8B%E7%AF%89%E3%81%99%E3%82%8BMLOps%E5%9F%BA%E7%9B%A4_%E9%85%8D%E5%B8%83%E7%89%88__AIMLTokyo7.pdf)
+
+- MLOpsとは
+  - AI/MLシステムにおけるDevOpsこと
+  - 一般的なDevOpsとの違いはCI/CDにCT(Continuos Training)があること
+  - MLOpsレベル
+    - MLOpsレベル0:手動
+    - MLOpsレベル1:MLパイプラインの自動化
+    - MLOpsレベル2:CI/CDパイプラインの自動化
+    - 
