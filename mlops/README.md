@@ -62,7 +62,10 @@
         - [Hidden Technical Debt in Machine Learning Systems](https://proceedings.neurips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)
   - MLOpsレベル
     - MLOpsレベル0:手動
+      - <p align='center'><img src='./img/README_2022-12-03-16-54-08.png' width='70%'></p>
     - MLOpsレベル1:MLパイプラインの自動化
+      - <p align='center'><img src='./img/README_2022-12-03-16-54-31.png' width='70%'></p>
     - MLOpsレベル2:CI/CDパイプラインの自動化
+      - <p align='center'><img src='./img/README_2022-12-03-16-54-57.png' width='70%'></p>
     - ref
       - [MLOps:機械学習における継続的デリバリーと自動化のパイプライン](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
