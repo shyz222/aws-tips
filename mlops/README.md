@@ -23,18 +23,21 @@
     - [GoogleCloudで機械学習を実装するためのベストプラクティス](https://cloud.google.com/architecture/ml-on-gcp-best-practices?hl=ja#machine-learning-workflow-orchestration)
     - [機械学習のワークフローってどうなっているの ? AWS の機械学習サービスをグラレコで解説](https://aws.amazon.com/jp/builders-flash/202003/awsgeek-sagemaker/?awsf.filter-name=*all)
 - AI/MLシステムにかかわる人員と役割（呼び方は色々あると思う。。。）
-  1. 探索的データ分析を実施する人達(Data Scientists/ML Engineers)
-     1. 特徴量エンジニアリング
-     2. モデル開発（加工/探索/訓練/評価）
-  2. データエンジニアリングする人達(Data Engineer)
-     1. データ収集
-     2. ETL
-  3. 上記をクラウドサービス等を用いてシステムとして構築・管理する人達(Cloud/Platform/Software/MLOps/SysOps Engineer)
-     1. システム化
-     2. パイプライン化
-     3. セキュリティ
-     4. ガバナンス
-     5. その他諸々
+  1. Data Scientist/ML Engineer
+    - 探索的データ分析を実施する人達
+      - 特徴量エンジニアリング
+      - モデル開発（加工/探索/訓練/評価）
+  2. Data Engineer
+    - データエンジニアリングする人達
+      - データ収集
+      - ETL
+  3. Cloud/Platform/Software/MLOps/SysOps Engineer
+    - 上記をクラウドサービス等を用いてシステムとして構築・管理する人達
+        - システム化
+        - パイプライン化
+        - セキュリティ
+        - ガバナンス
+        - その他諸々
    - <p align='center'><img src='./img/README_2022-12-03-16-06-04.png' width='70%'></p>
    - ref
      - [AWSで構築するMLOps基盤](https://pages.awscloud.com/rs/112-TZM-766/images/20201015_AWS%E3%81%A6%E3%82%99%E6%A7%8B%E7%AF%89%E3%81%99%E3%82%8BMLOps%E5%9F%BA%E7%9B%A4_%E9%85%8D%E5%B8%83%E7%89%88__AIMLTokyo7.pdf)
@@ -69,3 +72,4 @@
       - <p align='center'><img src='./img/README_2022-12-03-16-54-57.png' width='70%'></p>
     - ref
       - [MLOps:機械学習における継続的デリバリーと自動化のパイプライン](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
+- 
