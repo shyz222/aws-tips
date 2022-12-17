@@ -7,7 +7,7 @@
 # 目的
 - Cfnの設計思想を理解し、拡張性・運用保守性のあるIaCを作成できるようにするため
 # 背景
-- IaC使っているけど小さい規模のシステムを作る際に使っているくらいなので、設計思想をきちんと学習した上で大きいシステムのIaCがどうあるべきか学んでおきたい
+- IaC使っているけど小さい規模のシステムを作る際に使っているくらいでスタックを分けたこともテンプレートを作ったりマッピングを利用したこともない。なので、設計思想をきちんと学習した上で大きいシステムのIaCがどうあるべきか学んでおきたい
 # 参考
 - [AWS CloudFormation ベストプラクティス](https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/best-practices.html)
 - [CloudFormationの実践ベストプラクティス](https://qiita.com/uramotot/items/4a55ccad14f44f5006f6)
