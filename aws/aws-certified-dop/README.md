@@ -22,6 +22,9 @@
 ## CodeCommit
 - 特になし
 ## CodeBuild
+- buildspec.yml
+  - どうビルドしていくかを定義するyaml
+  - [CodeBuild のビルド仕様に関するリファレンス](https://docs.aws.amazon.com/ja_jp/codebuild/latest/userguide/build-spec-ref.html#build-spec-ref-syntax)
 - CodeCommitのPRをCodeBuildで検証するアーキテクチャ
   - [Validating AWS CodeCommit Pull Requests with AWS CodeBuild and AWS Lambda](https://aws.amazon.com/jp/blogs/devops/validating-aws-codecommit-pull-requests-with-aws-codebuild-and-aws-lambda/)
     - 2019年の記事でちょっと古い
@@ -43,17 +46,27 @@
 - EC2の場合CodeDeploy Agentをあらかじめインストールしておく必要がある（SSMを用いてインストールするのが推奨されている）
   - [Install the CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install.html)
   - [Install the CodeDeploy agent using AWS Systems Manager](https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-ssm.html)
+- appspec.yml
+  - どうデプロイしていくかを定義するyaml
+  - [CodeDeploy AppSpec File reference](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file.html)
 - Deployment/Release Type
   - EC2/オンプレ
     - In-place（俗にいうRollingDeployment）
+      - OnceAtATime
+      - HalfAtATime
+      - AllAtOnce
     - Blue/Green
-  - Lambda/ECS（Blue/Greenの中でCanary/Linear/All-at-Onceの３種類があるとAWSでは定義している。一般的にはCanaryとBlue/Greenは別のデプロイメント方式の認識だがAWSではCanaryを含む環境を２面用意する方式を広義のBlue/Greenとして定義しているみたい。）
+      - OnceAtATime
+      - HalfAtATime
+      - AllAtOnce
+  - Lambda/ECS（Blue/Greenの中でCanary/Linear/All-at-Onceの３種類があるとAWSでは定義している。）
     - Blue/Green
       - Canary（俗にいうカナリアリリース）
       - Linear（カナリアリリースの線形バージョン）
       - All-at-Once（俗にいうBlue/Green）
   - through Cfn
     - Blue/Green
+  - ※一般的にはCanaryとBlue/Greenは別のデプロイメント方式の認識だがAWSではCanaryを含む環境を２面用意する方式を広義のBlue/Greenとして定義しているみたい。
   - [Working with deployments in CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments.html)
   - [CodeDeploy のデプロイ方式に Blue/Green Deployment が追加されました](https://dev.classmethod.jp/articles/codedeploy-blue-green-deployment/)
 - Deploy Group
@@ -71,6 +84,7 @@
     - ECS
       - ECSクラスターを指定する
 - デプロイするファイルをS3に置く方法（EC2/オンプレの場合のみ）
+  - ファイル群がzipされてなくてもコマンド内でしてくれる
   ```
    aws deploy push \
   --application-name WordPress_App \
@@ -80,3 +94,4 @@
   --source .
   ```
   - [Push a revision for CodeDeploy to Amazon S3 (EC2/On-Premises deployments only)](https://docs.aws.amazon.com/codedeploy/latest/userguide/application-revisions-push.html)
+- 
