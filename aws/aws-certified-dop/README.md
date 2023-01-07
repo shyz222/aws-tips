@@ -7,6 +7,7 @@
   - [Codeシリーズ全般](#codeシリーズ全般)
   - [CodeCommit](#codecommit)
   - [CodeBuild](#codebuild)
+  - [CodeDeploy](#codedeploy)
 # 目的
 - 資格取得を通じて理解をより深めるため
 - awsを用いたシステムのアーキテクトをする際に、devopsに関する知識を初めから持っておくことで、拡張性や運用性に考慮したシステムを設計できるようにするため
@@ -27,7 +28,31 @@
     - <p align='center'><img src='./img/README_2023-01-07-15-50-23.png' width='70%'></p>
     - ↓の方が今のAWSサービスに則していてシンプル
   - [CodeCommitのプルリクをCodeBuildで検証しAWS ChatbotでSlack通知する](https://qiita.com/joe-king-sh/items/d896ec66a93212e92147)
-    - AWS chatbotを用いてslack通知している
+    - AWS Chatbotを用いてslack通知している
     - <p align='center'><img src='./img/README_2023-01-07-15-49-15.png' width='70%'></p>
-    - 自分のPJではTeamsを用いているが、AWS chatbotがTeams対応していないため、AWS Chatbotの代わりにLambdaで実装している
+    - 自分のPJではTeamsを用いているが、ChatbotがTeams対応していないため、AWS Chatbotの代わりにLambdaで実装している（上図のChatbotをLambdaに置き換えた感じ）
       - [ウェブフックを使用して Amazon SNS メッセージを Amazon Chime、Slack、または Microsoft Teams に発行する方法を教えてください。](https://aws.amazon.com/jp/premiumsupport/knowledge-center/sns-lambda-webhooks-chime-slack-teams/)
+    - SNS/Chatbotの代わりにEventBridge API Destonationを用いれば実現可能かも（上図のSNS/ChatbotをEventBridgeに置き換えた感じ）
+      - [Amazon EventBridge API destinations で Microsoft Teams へ通知させる](https://dev.classmethod.jp/articles/eventbridge-teams/)
+- 色んなものをビルドできるらしい（自分はDockerイメージをビルドしてECRにプッシュし、CodeDeployでECSにデプロイするアーキテクチャしか経験がない）
+  - [CodeBuild ユースケースベースのサンプル](https://docs.aws.amazon.com/ja_jp/codebuild/latest/userguide/use-case-based-samples.html)
+## CodeDeploy
+- EC2/オンプレサーバー/Lambda/ECSへデプロイできる（ECSしか経験がないため他知らなかった）
+- EKSもCodePipelineを用いればできるみたい
+  - [AWS CodePipelineからEKSのPodをデプロイする](https://open-groove.net/ci-cd/aws-codepipeline-eks-deploy/)
+- EC2の場合CodeDeploy Agentをあらかじめインストールしておく必要がある（SSMを用いてインストールするのが推奨されている）
+  - [Install the CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install.html)
+  - [Install the CodeDeploy agent using AWS Systems Manager](https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-ssm.html)
+- Deployment/Release Type
+  - EC2/オンプレ
+    - In-place（俗にいうRollingDeployment）
+    - Blue/Green
+  - Lambda/ECS（Blue/Greenの中でCanary/Linear/All-at-Onceの３種類があるとAWSでは定義している。一般的にはCanaryとBlue/Greenは別のデプロイメント方式の認識だがAWSではCanaryを含む環境を２面用意する方式を広義のBlue/Greenとして定義しているみたい。）
+    - Blue/Green
+      - Canary（俗にいうカナリアリリース）
+      - Linear（カナリアリリースの線形バージョン）
+      - All-at-Once（俗にいうBlue/Green）
+  - through Cfn
+    - Blue/Green
+  - [Working with deployments in CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments.html)
+  - [CodeDeploy のデプロイ方式に Blue/Green Deployment が追加されました](https://dev.classmethod.jp/articles/codedeploy-blue-green-deployment/)
