@@ -3,7 +3,7 @@
 - [目的](#目的)
 - [背景](#背景)
 - [ref](#ref)
-- [学習内容](#学習内容)
+- [内容](#内容)
 # 目的
 - よく使うSQLや各種SQLエンジンの特徴などまとめる
 # 背景
@@ -14,7 +14,7 @@
 - [Apache Hive 概要 / HiveQL チートシート](https://qiita.com/esakik/items/c9659e2496362b914e6d)
 - [Hive vs Presto vs Spark for Data Analysis](https://ahana.io/learn/comparisons/hive-vs-presto-vs-spark/)
 - []()
-# 学習内容
+# 内容
 - SQLエンジン
   - Presto
     - 特徴
