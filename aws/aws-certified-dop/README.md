@@ -56,3 +56,17 @@
     - Blue/Green
   - [Working with deployments in CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments.html)
   - [CodeDeploy のデプロイ方式に Blue/Green Deployment が追加されました](https://dev.classmethod.jp/articles/codedeploy-blue-green-deployment/)
+- Deploy Group
+  - EC2/オンプレ
+    - アプリケーションをデプロイする単位は下記がある
+      - Amazon EC2 ASG
+      - Amazon EC2 instances
+        - タグを使用してグループを定義できる
+      - On-premises instances
+        - タグを使用してグループを定義できる
+      - [CodeDeploy でのデプロイグループのインスタンスのタグ付け](https://docs.aws.amazon.com/ja_jp/codedeploy/latest/userguide/instances-tagging.html)
+    - Lambda
+      - ？
+      - おそらくLambda Functionを指定する
+    - ECS
+      - ECSクラスターを指定する
