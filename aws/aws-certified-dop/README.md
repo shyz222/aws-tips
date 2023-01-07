@@ -70,3 +70,13 @@
       - おそらくLambda Functionを指定する
     - ECS
       - ECSクラスターを指定する
+- デプロイするファイルをS3に置く方法（EC2/オンプレの場合のみ）
+  ```
+   aws deploy push \
+  --application-name WordPress_App \
+  --description "This is a revision for the application WordPress_App" \
+  --ignore-hidden-files \
+  --s3-location s3://codedeploydemobucket/WordPressApp.zip \
+  --source .
+  ```
+  - [Push a revision for CodeDeploy to Amazon S3 (EC2/On-Premises deployments only)](https://docs.aws.amazon.com/codedeploy/latest/userguide/application-revisions-push.html)
