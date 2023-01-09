@@ -137,6 +137,11 @@
       - デフォルトのS3を新規作成
     - Custom location
       - 既存のS3を利用
+  - ex.ソース(CodeCommit)→ビルド(CodeBuild)→テスト(CodeBuild)→承認(Munual)→デプロイ(CodeDeploy)の場合
+    1. CodeCommitの対象ブランチをArtifact Store(S3)にプル
+    2. 1.を用いてビルドし成果物をまたArtifact Store(S3)に格納
+    3. 2.を用いてテストし結果をArtifact Store(S3)に格納
+    4. 2.を用いてデプロイ
 - Sourceの詳細設定
   - Change detection options(検出オプション)
     - Amazon CloudWatch events(Amazon EventBridge)
