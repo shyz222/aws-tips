@@ -115,17 +115,28 @@
       - デフォルトのS3を新規作成
     - Custom location
       - 既存のS3を利用
-- Source provider
-  - パイプラインの入力アーティファクト
-    - CodeCommit
-    - ECR
-    - S3
-    - BitBucket
-    - GitHub v1
-    - GitHub v2
-    - GitHub Enterprise Server
+- 下記のステージで構成される
+  - Source stage
+  - Build stage
+  - Deploy stage
+- Source stage
+  - Source provider
+    - パイプラインの入力アーティファクト
+      - CodeCommit
+      - ECR
+      - S3
+      - BitBucket
+      - GitHub v1
+      - GitHub v2
+      - GitHub Enterprise Server
+    - Change detection options
+      - Amazon CloudWatch events(Amazon EventBridge)
+        - イベントトリガー(ex.リポジトリへのプッシュ/ブランチの作成など)
+      - AWS CodePipeline
+        - EventBridgeを用いずCodePipelineの内部機能を用いて変更を定期的にチェックする
 - providerの詳細
   - [CodePipeline パイプライン構造リファレンス](https://docs.aws.amazon.com/ja_jp/codepipeline/latest/userguide/reference-pipeline-structure.html)
 - IaC(Cfn)での実装
   - [AWS::CodePipeline::Pipeline](https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html)
   - [GitHub/CodeBuild/CodePipelineを利用してCloudFormationのCI/CDパイプラインを構築する](https://dev.classmethod.jp/articles/developing-cloudformation-ci-cd-pipeline-with-github-codebuild-codepipeline/)
+  - [CodePipelineを使ってCodeCommitプッシュをトリガーにしてECRにイメージをプッシュする](https://awstut.com/2022/08/14/use-codepipeline-to-trigger-codecommit-pushes-to-push-images-to-ecr/)
