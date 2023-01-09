@@ -10,6 +10,7 @@
   - [CodeDeploy](#codedeploy)
   - [CodePipeeline](#codepipeeline)
   - [CI/CDツール一覧](#cicdツール一覧)
+  - [AWSにおけるクロスアカウントでのCI/CD実装](#awsにおけるクロスアカウントでのcicd実装)
 # 目的
 - 資格取得を通じて理解をより深めるため
 - awsを用いたシステムのアーキテクトをする際に、devopsに関する知識を初めから持っておくことで、拡張性や運用性に考慮したシステムを設計できるようにするため
@@ -116,15 +117,25 @@
       - デフォルトのS3を新規作成
     - Custom location
       - 既存のS3を利用
-- 下記のステージで構成される
+- デフォルトの場合、下記のステージで構成される(リソース名は任意、デフォルトは下記のようにSource/Build/Deployとなる)
   - Source stage
   - Build stage
   - Deploy stage
+- ステージごとにアクション名(リソース名は任意)、アクションプロバイダーを定義する必要あり
+  - アクションは下記がある
+    - Source
+    - Build
+    - Test
+    - Deploy
+    - Approval
+    - Invoke
 - Source stage
+  - Action provider
+    - Source
   - Source provider
-    - CodeCommit
-    - ECR
-    - S3
+    - AWS CodeCommit
+    - Amazon ECR
+    - Amazon S3
     - BitBucket
     - GitHub v1
     - GitHub v2
@@ -135,10 +146,27 @@
     - AWS CodePipeline
       - EventBridgeを用いずCodePipelineの内部機能を用いて変更を定期的にチェックする
 - Build stage
+  - Action provider
+    - Build
   - Build provider
-    - CodeBuild
+    - AWS CodeBuild
     - Jenkins
-- providerの詳細
+- Deploy stage
+  - Action provider
+    - Deploy
+  - Deploy provider
+    - AWS CodeDeploy
+    - Amazon ECS
+    - Amazon ECS(Blue/Green)
+    - Amazon S3
+    - AWS Cfn
+    - AWS Cfn スタックセット
+    - AWS AppConfig
+    - AWS Elastic Beanstalk
+    - AWS OpsWork スタック
+    - AWS Service Catalog
+    - Alexa Skills Set
+- stage/action/providerなどパイプラインの構造について
   - [CodePipeline パイプライン構造リファレンス](https://docs.aws.amazon.com/ja_jp/codepipeline/latest/userguide/reference-pipeline-structure.html)
 - IaC(Cfn)での実装
   - [AWS::CodePipeline::Pipeline](https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html)
@@ -150,3 +178,9 @@
 - Jenkins
 - GitLab CI/CD
 - GitHub Actions
+## AWSにおけるクロスアカウントでのCI/CD実装
+- [異なる AWS アカウントでアプリケーションをデプロイする](https://docs.aws.amazon.com/ja_jp/codedeploy/latest/userguide/deployments-cross-account.html)
+- [別のAWSアカウントにあるCodeCommit RepositoryをソースとするCodePipelineをCloudFormationで構築してみた](https://dev.classmethod.jp/articles/cross-account-codecommit-codepipeline-with-cfn/)
+  - <p align='center'><img src='./img/README_2023-01-09-13-43-45.png' width='70%'></p>
+- [CodePipelineでアカウントをまたいだパイプラインを作成してみる](https://dev.classmethod.jp/articles/codepipeline-cross-account/)
+  - <p align='center'><img src='./img/README_2023-01-09-13-44-48.png' width='70%'></p>
