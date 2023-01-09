@@ -111,63 +111,38 @@
   ```
   - [Push a revision for CodeDeploy to Amazon S3 (EC2/On-Premises deployments only)](https://docs.aws.amazon.com/codedeploy/latest/userguide/application-revisions-push.html)
 ## CodePipeeline
+- ステージ/アクション/プロバイダーを定義して、CI/CDパイプラインをカスタムできるAWSサービス
+- ソース(CodeCommit)→ビルド(CodeBuild)→テスト(CodeBuild)→承認(Munual)→デプロイ(CodeDeploy)みたいなパイプラインをよしなに作れる
+  - ステージ
+    - デフォルトの場合下記で構成され任意で定義/追加/削除できる
+      - Source→Build→Deploy
+  - アクション/プロバイダー(アクションを提供するリソース)
+    - Source
+      - CodeCommit/ECR/S3/BitBucket/GitHub/etc
+    - Build
+      - CodeBuild/Jenkins/etc
+    - Test
+      - CodeBuild/Jenkins/etc
+    - Deploy
+      - CodeDeploy/ECS/ECS(Blue/Green)/S3/Cfn/Cfn(StackSet)/etc
+    - Approval
+      - Manual(手動)
+    - Invoke
+      - Lambda/StepFunctions
+    - 詳細は下記参照
+      - [CodePipeline パイプライン構造リファレンス](https://docs.aws.amazon.com/ja_jp/codepipeline/latest/userguide/reference-pipeline-structure.html)
 - Artifact Store
   - 各パイプラインの入出力アーティファクトの格納先
     - Default location
       - デフォルトのS3を新規作成
     - Custom location
       - 既存のS3を利用
-- デフォルトの場合、下記のステージで構成される(リソース名は任意、デフォルトは下記のようにSource/Build/Deployとなる)
-  - Source stage
-  - Build stage
-  - Deploy stage
-- ステージごとにアクション名(リソース名は任意)、アクションプロバイダーを定義する必要あり
-  - アクションは下記がある
-    - Source
-    - Build
-    - Test
-    - Deploy
-    - Approval
-    - Invoke
-- Source stage
-  - Action provider
-    - Source
-  - Source provider
-    - AWS CodeCommit
-    - Amazon ECR
-    - Amazon S3
-    - BitBucket
-    - GitHub v1
-    - GitHub v2
-    - GitHub Enterprise Server
-  - Change detection options
+- Sourceの詳細設定
+  - Change detection options(検出オプション)
     - Amazon CloudWatch events(Amazon EventBridge)
       - イベントトリガー(ex.リポジトリへのプッシュ/ブランチの作成など)
     - AWS CodePipeline
       - EventBridgeを用いずCodePipelineの内部機能を用いて変更を定期的にチェックする
-- Build stage
-  - Action provider
-    - Build
-  - Build provider
-    - AWS CodeBuild
-    - Jenkins
-- Deploy stage
-  - Action provider
-    - Deploy
-  - Deploy provider
-    - AWS CodeDeploy
-    - Amazon ECS
-    - Amazon ECS(Blue/Green)
-    - Amazon S3
-    - AWS Cfn
-    - AWS Cfn スタックセット
-    - AWS AppConfig
-    - AWS Elastic Beanstalk
-    - AWS OpsWork スタック
-    - AWS Service Catalog
-    - Alexa Skills Set
-- stage/action/providerなどパイプラインの構造について
-  - [CodePipeline パイプライン構造リファレンス](https://docs.aws.amazon.com/ja_jp/codepipeline/latest/userguide/reference-pipeline-structure.html)
 - IaC(Cfn)での実装
   - [AWS::CodePipeline::Pipeline](https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html)
   - [GitHub/CodeBuild/CodePipelineを利用してCloudFormationのCI/CDパイプラインを構築する](https://dev.classmethod.jp/articles/developing-cloudformation-ci-cd-pipeline-with-github-codebuild-codepipeline/)
