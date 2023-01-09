@@ -3,7 +3,7 @@
 - [目的](#目的)
 - [ルール](#ルール)
   - [ディレクトリ・ファイル命名規則](#ディレクトリファイル命名規則)
-  - [git開発戦略](#git開発戦略)
+  - [git戦略](#git戦略)
 # 目的
 - 業務またはプライベートで学んだ内容のアウトプット・備忘録
 # ルール
@@ -25,7 +25,7 @@
   scenario/how-to-manage-multi-account
   aws-certified-sap
   ```
-## git開発戦略
+## git戦略
 - 基本はgit-flow
 - 開発単位ごとにfeatureブランチを作成し作業（個人用なのでmaster直でも良いがgitの使い方・コマンド忘れないように）
 - 個人用なのでdevelop/hotfix/releaseは採用しない
