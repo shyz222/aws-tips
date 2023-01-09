@@ -59,14 +59,14 @@
       - OnceAtATime
       - HalfAtATime
       - AllAtOnce
-  - Lambda/ECS（Blue/Greenの中でCanary/Linear/All-at-Onceの３種類があるとAWSでは定義している。）
+  - Lambda/ECS（Blue/Greenの中でCanary/Linear/All-at-Onceの３種類があるとAWSでは定義している）
     - Blue/Green
       - Canary（俗にいうカナリアリリース）
       - Linear（カナリアリリースの線形バージョン）
       - All-at-Once（俗にいうBlue/Green）
   - through Cfn
     - Blue/Green
-  - ※一般的にはCanaryとBlue/Greenは別のデプロイメント方式の認識だがAWSではCanaryを含む環境を２面用意する方式を広義のBlue/Greenとして定義しているみたい。
+  - ※一般的にはCanaryとBlue/Greenは別のデプロイメント方式の認識だがAWSではCanaryを含む環境を２面用意する方式を広義のBlue/Greenとして定義しているみたい
   - [Working with deployments in CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments.html)
   - [CodeDeploy のデプロイ方式に Blue/Green Deployment が追加されました](https://dev.classmethod.jp/articles/codedeploy-blue-green-deployment/)
 - Deploy Group
