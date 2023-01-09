@@ -8,6 +8,7 @@
   - [CodeCommit](#codecommit)
   - [CodeBuild](#codebuild)
   - [CodeDeploy](#codedeploy)
+  - [CodePipeeline](#codepipeeline)
 # 目的
 - 資格取得を通じて理解をより深めるため
 - awsを用いたシステムのアーキテクトをする際に、devopsに関する知識を初めから持っておくことで、拡張性や運用性に考慮したシステムを設計できるようにするため
@@ -107,4 +108,24 @@
   --source .
   ```
   - [Push a revision for CodeDeploy to Amazon S3 (EC2/On-Premises deployments only)](https://docs.aws.amazon.com/codedeploy/latest/userguide/application-revisions-push.html)
-- 
+## CodePipeeline
+- Artifact Store
+  - 各パイプラインの入出力アーティファクトの格納先
+    - Default location
+      - デフォルトのS3を新規作成
+    - Custom location
+      - 既存のS3を利用
+- Source provider
+  - パイプラインの入力アーティファクト
+    - CodeCommit
+    - ECR
+    - S3
+    - BitBucket
+    - GitHub v1
+    - GitHub v2
+    - GitHub Enterprise Server
+- providerの詳細
+  - [CodePipeline パイプライン構造リファレンス](https://docs.aws.amazon.com/ja_jp/codepipeline/latest/userguide/reference-pipeline-structure.html)
+- IaC(Cfn)での実装
+  - [AWS::CodePipeline::Pipeline](https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html)
+  - [GitHub/CodeBuild/CodePipelineを利用してCloudFormationのCI/CDパイプラインを構築する](https://dev.classmethod.jp/articles/developing-cloudformation-ci-cd-pipeline-with-github-codebuild-codepipeline/)
