@@ -129,7 +129,9 @@
       - Manual(手動)
     - Invoke
       - Lambda/StepFunctions
-    - 詳細は下記参照
+      - Invokeのユースケース
+        - [Invoke an AWS Lambda function in a pipeline in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/actions-invoke-lambda-function.html)
+    - アクション/プロバイダーの詳細は下記参照
       - [CodePipeline パイプライン構造リファレンス](https://docs.aws.amazon.com/ja_jp/codepipeline/latest/userguide/reference-pipeline-structure.html)
 - Artifact Store
   - 各パイプラインの入出力アーティファクトの格納先
@@ -139,9 +141,11 @@
       - 既存のS3を利用
   - ex.ソース(CodeCommit)→ビルド(CodeBuild)→テスト(CodeBuild)→承認(Munual)→デプロイ(CodeDeploy)の場合
     1. CodeCommitの対象ブランチをArtifact Store(S3)にプル
-    2. 1.を用いてビルドし成果物をまたArtifact Store(S3)に格納
+    2. 1.を用いてビルドし成果物をまたArtifact Store(S3)に格納(あるいは成果物(Dockerイメージ)をECRにプッシュなど)
     3. 2.を用いてテストし結果をArtifact Store(S3)に格納
     4. 2.を用いてデプロイ
+       - ※最後のデプロイ先はDeploy Providerで指定することになる
+         - ex.別のS3に格納したい場合はDeploy ProviderにS3を指定
 - Sourceの詳細設定
   - Change detection options(検出オプション)
     - Amazon CloudWatch events(Amazon EventBridge)
@@ -152,6 +156,8 @@
   - [AWS::CodePipeline::Pipeline](https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html)
   - [GitHub/CodeBuild/CodePipelineを利用してCloudFormationのCI/CDパイプラインを構築する](https://dev.classmethod.jp/articles/developing-cloudformation-ci-cd-pipeline-with-github-codebuild-codepipeline/)
   - [CodePipelineを使ってCodeCommitプッシュをトリガーにしてECRにイメージをプッシュする](https://awstut.com/2022/08/14/use-codepipeline-to-trigger-codecommit-pushes-to-push-images-to-ecr/)
+- other ref
+  - [CodePipeline best practices and use cases](https://docs.aws.amazon.com/codepipeline/latest/userguide/best-practices.html)
 ## CI/CDツール一覧
 - AWS Codeシリーズ
 - CircleCI
