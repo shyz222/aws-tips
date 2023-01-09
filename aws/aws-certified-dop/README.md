@@ -9,6 +9,7 @@
   - [CodeBuild](#codebuild)
   - [CodeDeploy](#codedeploy)
   - [CodePipeeline](#codepipeeline)
+  - [CI/CDツール一覧](#cicdツール一覧)
 # 目的
 - 資格取得を通じて理解をより深めるため
 - awsを用いたシステムのアーキテクトをする際に、devopsに関する知識を初めから持っておくことで、拡張性や運用性に考慮したシステムを設計できるようにするため
@@ -121,22 +122,31 @@
   - Deploy stage
 - Source stage
   - Source provider
-    - パイプラインの入力アーティファクト
-      - CodeCommit
-      - ECR
-      - S3
-      - BitBucket
-      - GitHub v1
-      - GitHub v2
-      - GitHub Enterprise Server
-    - Change detection options
-      - Amazon CloudWatch events(Amazon EventBridge)
-        - イベントトリガー(ex.リポジトリへのプッシュ/ブランチの作成など)
-      - AWS CodePipeline
-        - EventBridgeを用いずCodePipelineの内部機能を用いて変更を定期的にチェックする
+    - CodeCommit
+    - ECR
+    - S3
+    - BitBucket
+    - GitHub v1
+    - GitHub v2
+    - GitHub Enterprise Server
+  - Change detection options
+    - Amazon CloudWatch events(Amazon EventBridge)
+      - イベントトリガー(ex.リポジトリへのプッシュ/ブランチの作成など)
+    - AWS CodePipeline
+      - EventBridgeを用いずCodePipelineの内部機能を用いて変更を定期的にチェックする
+- Build stage
+  - Build provider
+    - CodeBuild
+    - Jenkins
 - providerの詳細
   - [CodePipeline パイプライン構造リファレンス](https://docs.aws.amazon.com/ja_jp/codepipeline/latest/userguide/reference-pipeline-structure.html)
 - IaC(Cfn)での実装
   - [AWS::CodePipeline::Pipeline](https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html)
   - [GitHub/CodeBuild/CodePipelineを利用してCloudFormationのCI/CDパイプラインを構築する](https://dev.classmethod.jp/articles/developing-cloudformation-ci-cd-pipeline-with-github-codebuild-codepipeline/)
   - [CodePipelineを使ってCodeCommitプッシュをトリガーにしてECRにイメージをプッシュする](https://awstut.com/2022/08/14/use-codepipeline-to-trigger-codecommit-pushes-to-push-images-to-ecr/)
+## CI/CDツール一覧
+- AWS Codeシリーズ
+- CircleCI
+- Jenkins
+- GitLab CI/CD
+- GitHub Actions
