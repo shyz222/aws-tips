@@ -77,12 +77,25 @@
         - タグを使用してグループを定義できる
       - On-premises instances
         - タグを使用してグループを定義できる
+        - オンプレの登録方法
+          - IAMユーザーARNを使用してリクエストを認証する
+          - IAMロールARNを使用してリクエストを認証する（STSなので↑よりセキュア）
+            - 具体的な手順
+            - <p align='center'><img src='./img/README_2023-01-07-18-32-05.png' width='70%'></p>
+          - [Register an on-premises instance with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/on-premises-instances-register.html)
       - [CodeDeploy でのデプロイグループのインスタンスのタグ付け](https://docs.aws.amazon.com/ja_jp/codedeploy/latest/userguide/instances-tagging.html)
     - Lambda
       - ？
       - おそらくLambda Functionを指定する
     - ECS
       - ECSクラスターを指定する
+- Rollback
+  - ロールバック設定は下記がある
+    - 無効
+    - 有効
+      - デプロイが失敗したときにロールバックする
+      - アラームのしきい値が一致したときにロールバックする
+        - 紐づけたCloudWatch Alarmsの条件を基に判断される
 - デプロイするファイルをS3に置く方法（EC2/オンプレの場合のみ）
   - ファイル群がzipされてなくてもコマンド内でしてくれる
   ```
