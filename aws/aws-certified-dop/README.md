@@ -8,7 +8,7 @@
   - [CodeCommit](#codecommit)
   - [CodeBuild](#codebuild)
   - [CodeDeploy](#codedeploy)
-  - [CodePipeeline](#codepipeeline)
+  - [CodePipeline](#codepipeline)
   - [CI/CDツール一覧](#cicdツール一覧)
   - [AWSにおけるクロスアカウントでのCI/CD実装](#awsにおけるクロスアカウントでのcicd実装)
 # 目的
@@ -110,7 +110,7 @@
   --source .
   ```
   - [Push a revision for CodeDeploy to Amazon S3 (EC2/On-Premises deployments only)](https://docs.aws.amazon.com/codedeploy/latest/userguide/application-revisions-push.html)
-## CodePipeeline
+## CodePipeline
 - ステージ/アクション/プロバイダーを定義して、CI/CDパイプラインをカスタムできるAWSサービス
 - ソース(CodeCommit)→ビルド(CodeBuild)→テスト(CodeBuild)→承認(Munual)→デプロイ(CodeDeploy)みたいなパイプラインをよしなに作れる
   - ステージ
@@ -153,6 +153,9 @@
     - AWS CodePipeline
       - EventBridgeを用いずCodePipelineの内部機能を用いて変更を定期的にチェックする
 - IaC(Cfn)での実装
+  - [AWS CodePipelineを利用したネストされたAWS CloudFormationスタックの継続的デリバリー](https://aws.amazon.com/jp/blogs/news/continuous-delivery-of-nested-aws-cloudformation-stacks-using-aws-codepipeline/)
+  - [aws-samples/codepipeline-nested-cfn](https://github.com/aws-samples/codepipeline-nested-cfn)
+    - <p align='center'><img src='./img/README_2023-01-09-16-59-16.png' width='70%'></p>
   - [AWS::CodePipeline::Pipeline](https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html)
   - [GitHub/CodeBuild/CodePipelineを利用してCloudFormationのCI/CDパイプラインを構築する](https://dev.classmethod.jp/articles/developing-cloudformation-ci-cd-pipeline-with-github-codebuild-codepipeline/)
   - [CodePipelineを使ってCodeCommitプッシュをトリガーにしてECRにイメージをプッシュする](https://awstut.com/2022/08/14/use-codepipeline-to-trigger-codecommit-pushes-to-push-images-to-ecr/)
