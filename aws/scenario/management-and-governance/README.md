@@ -2,8 +2,9 @@
 - [目次](#目次)
 - [目的](#目的)
 - [背景](#背景)
-- [AWSアカウントの管理](#awsアカウントの管理)
-- [IAMユーザーの管理](#iamユーザーの管理)
+- [内容](#内容)
+  - [AWSアカウントの管理](#awsアカウントの管理)
+  - [IAMユーザーの管理](#iamユーザーの管理)
 # 目的
 - AWSリソースのManagemment&Governanceの知識習得
 - 具体的には、AWSアカウント管理・IAMユーザー・IAMロール管理・コスト管理・コンプライアンスなど
@@ -16,8 +17,9 @@
     1. でも、サービスがある程度大きくなった後にガバナンスを整えるのは辛い。
     1. じゃあ、開発する前にガバナンスの地盤を整えるべき。（1に戻る。。。）
         - ジレンマを打開するためにガバナンス管理のベスプラを知っておき、開発する前に適用できるようなスキルを持っておく。
+# 内容
 
-# AWSアカウントの管理
+## AWSアカウントの管理
 - AWSではセキュリティ・ガバナンスの強化を目的にマルチアカウントでの管理を推奨している。
     - なぜマルチアカウントなのか？
         - アカウント分割でVPCだけでなくAPIのレベルで環境を分けるこれによって「環境」「課金」「ビジネス推進」「ワークロード」の観点でそれぞれメリットがある
@@ -66,7 +68,7 @@
     - [AWS マルチアカウント管理を実現するベストプラクティスとは ?](https://aws.amazon.com/jp/builders-flash/202007/multi-accounts-best-practice/?awsf.filter-name=-all)
     - [増加するシステムをマルチアカウントで効率よく管理する](https://d1.awsstatic.com/events/jp/2020/innovate/pdf/S-7_AWSInnovate_Online_Conference_2020_Spring_MultiAccount.pdf)
     - [AWSのマルチアカウント戦略が難しい！](https://dev.classmethod.jp/articles/aws-multiaccount-muzu/)
-# IAMユーザーの管理
+## IAMユーザーの管理
 - [え、IAM ユーザーを作らなくてもマネジメントコンソールにログインできるの!? – シングルサインオン考え方編](https://aws.amazon.com/jp/blogs/startup/techblog-iam-sso-concept/)
 - [え、IAM ユーザーを作らなくてもマネジメントコンソールにログインできるの!? – シングルサインオン実践編](https://aws.amazon.com/jp/blogs/startup/techblog-iam-sso-practice/)
 
