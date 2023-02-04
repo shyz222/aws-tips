@@ -33,3 +33,4 @@
 - ブランチ名は小文字とアンダースコア
 # tips
 - [GitHub AWS Samples](https://github.com/aws-samples)
+- [AWS や Azure サービスと Google Cloud を比較する](https://cloud.google.com/free/docs/aws-azure-gcp-service-comparison?hl=ja)
