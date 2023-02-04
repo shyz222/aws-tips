@@ -34,3 +34,4 @@
 # tips
 - [GitHub AWS Samples](https://github.com/aws-samples)
 - [AWS や Azure サービスと Google Cloud を比較する](https://cloud.google.com/free/docs/aws-azure-gcp-service-comparison?hl=ja)
+- [要注意な技術英語](https://qiita.com/shibukawa/items/8ae46cff850718e670d7#:~:text=September%2013%2C%202016-,SQL%5B%CB%88si%CB%90kw%C9%99l%5D,%E3%81%A8%E3%81%AA%E3%82%8B%E3%81%A8%E3%81%AE%E3%81%93%E3%81%A8%E3%81%A7%E3%81%99%E3%80%82)
