@@ -5,7 +5,9 @@
 - [参考](#参考)
 - [内容](#内容)
   - [検証環境と商用環境におけるMLパイプラインの違いは何か？](#検証環境と商用環境におけるmlパイプラインの違いは何か)
-  - [SageMakerのネットワーク設計パターン](#sagemakerのネットワーク設計パターン)
+  - [AWS Kinesis](#aws-kinesis)
+  - [Amazon SageMaker各種サービスについて](#amazon-sagemaker各種サービスについて)
+  - [Amazon SageMakerネットワーク設計パターン](#amazon-sagemakerネットワーク設計パターン)
 # 目的
 - AWSのML関連の知識習得
 # 背景
@@ -33,6 +35,31 @@
 - GCPの図的に表してたやつ
   - [MLOps: 機械学習における継続的デリバリーと自動化のパイプライン](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
   - <p align='center'><img src='./img/README_2023-01-22-15-59-50.png' width='70%'></p>
-## SageMakerのネットワーク設計パターン
+## AWS Kinesis
+- Overview
+  - Kinesis is a managed alternative to Apache Kafka
+    - (Apache Kafka is an open-source distributed event streaming platform (also known as a “pub/sub” messaging system) that brokers communication between bare-metal servers, virtual machines, and cloud-native services.)
+  - Great for application logs, metrics, IoT, clickstreams
+  - Great for real-time big data
+  - Great for streaming processing frameworks (Spark, NiFi, etc...
+- Capabilities
+  - Kinesis Data Streams: low latency streaming ingest at scale
+  - Kinesis Data Analytics: perform real-time analytics on streams using SQL
+  - Kinesis Data Firehose: load streams into S3, Redshift, ElasticSearch & Splunk
+  - Kinesis Video Streams: meant for streaming video in real-time
+- Architecture
+  - [Amazon Kinesis Data Analytics Studio の概要 – SQL、Python、または Scala を使用してストリーミングデータをすばやく操作する](https://aws.amazon.com/jp/blogs/news/introducing-amazon-kinesis-data-analytics-studio-quickly-interact-with-streaming-data-using-sql-python-or-scala/)
+  - <p align='center'><img src='./img/README_2023-02-04-15-23-57.png' width='70%'></p>
+
+
+## Amazon SageMaker各種サービスについて
+- [Amazon SageMakerサービスまとめ](https://qiita.com/knowledgecommunication/items/1350af15e8adda0971ae)
+- [AWS再入門ブログリレー2022 Amazon SageMaker 編](https://dev.classmethod.jp/articles/re-introduction-2022-sagemaker/)
+- [[Amazon SageMaker Data Wrangler] 機械学習用データを簡単で最速に準備できる機能を使ってみた](https://dev.classmethod.jp/articles/amazon-sagemaker-data-wrangler-with-demo-titanic/)
+- [Amazon SageMaker Data Wrangler が Amazon EMR Presto をビッグデータクエリエンジンとしてサポート](https://aws.amazon.com/jp/about-aws/whats-new/2022/12/sagemaker-data-wrangler-supports-amazon-emr-presto-data-source-query-engine/)
+- []()
+- []()
+- []()
+## Amazon SageMakerネットワーク設計パターン
 - [【Amazon SageMaker】ネットワーク設計パターンをまとめてみた](https://dev.classmethod.jp/articles/sagemaker-network-vpc-architecture-2022-04/)
 - [閉域網で Amazon SageMaker を利用する際のポイントと手順](https://aws.amazon.com/jp/blogs/news/internet-free-sagemaker/)
