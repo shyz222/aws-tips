@@ -47,7 +47,13 @@
     - [details](https://docs.aws.amazon.com/streams/latest/dev/key-concepts.html)
     - <p align='center'><img src='./img/README_2023-02-04-15-49-46.png' width='70%'></p>
   - Kinesis Data Analytics: perform real-time analytics on streams using SQL
-    - [details]()
+    - Use cases
+      - Streaming ETL: select columns, make simple transformations, on streaming data
+      - Continuous metric generation: live leaderboard for a mobile game
+      - Responsive analytics: look for certain criteria and build alerting (filtering)
+    - [リアルタイム分析がやりたい！はじめての Kinesis Data Analytics](https://dev.classmethod.jp/articles/first-time-kinesis-data-analytics/)
+    - [Kinesis Data Analytics Studioでストリーミングデータを可視化してみた](https://dev.classmethod.jp/articles/visualize_with_kinesis-data-analytics-studio/)
+    - <p align='center'><img src='./img/README_2023-02-04-16-21-04.png' width='70%'></p>
   - Kinesis Data Firehose: load streams into S3, Redshift, ElasticSearch & Splunk
     - <p align='center'><img src='./img/README_2023-02-04-15-48-54.png' width='70%'></p>
   - Kinesis Video Streams: meant for streaming video in real-time
