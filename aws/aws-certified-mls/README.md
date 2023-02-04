@@ -44,9 +44,14 @@
   - Great for streaming processing frameworks (Spark, NiFi, etc...
 - Capabilities
   - Kinesis Data Streams: low latency streaming ingest at scale
+    - [details](https://docs.aws.amazon.com/streams/latest/dev/key-concepts.html)
+    - <p align='center'><img src='./img/README_2023-02-04-15-49-46.png' width='70%'></p>
   - Kinesis Data Analytics: perform real-time analytics on streams using SQL
+    - [details]()
   - Kinesis Data Firehose: load streams into S3, Redshift, ElasticSearch & Splunk
+    - <p align='center'><img src='./img/README_2023-02-04-15-48-54.png' width='70%'></p>
   - Kinesis Video Streams: meant for streaming video in real-time
+    - [details]()
 - Architecture
   - [Amazon Kinesis Data Analytics Studio の概要 – SQL、Python、または Scala を使用してストリーミングデータをすばやく操作する](https://aws.amazon.com/jp/blogs/news/introducing-amazon-kinesis-data-analytics-studio-quickly-interact-with-streaming-data-using-sql-python-or-scala/)
   - <p align='center'><img src='./img/README_2023-02-04-15-23-57.png' width='70%'></p>
