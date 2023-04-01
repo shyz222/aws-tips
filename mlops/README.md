@@ -72,4 +72,5 @@
       - <p align='center'><img src='./img/README_2022-12-03-16-54-57.png' width='70%'></p>
     - ref
       - [MLOps:機械学習における継続的デリバリーと自動化のパイプライン](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
-- 
+- [Amazon SageMakerを利用したエンタープライズのためのMLOps基盤ロードマップ](https://aws.amazon.com/jp/blogs/news/mlops-foundation-roadmap-for-enterprises-with-amazon-sagemaker-jp/)
+  - [詳細](../aws/aws-certified-mls/README.md)

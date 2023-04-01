@@ -55,8 +55,21 @@
   - [Amazon Kinesis Data Analytics Studio の概要 – SQL、Python、または Scala を使用してストリーミングデータをすばやく操作する](https://aws.amazon.com/jp/blogs/news/introducing-amazon-kinesis-data-analytics-studio-quickly-interact-with-streaming-data-using-sql-python-or-scala/)
   - <p align='center'><img src='./img/README_2023-02-04-15-23-57.png' width='70%'></p>
 ### AWS Glue
-- [AWS再入門ブログリレー2022 AWS Glue編](https://dev.classmethod.jp/articles/re-introduction-2022-aws-glue/)
-
+- Overview
+  - Discover and organize data
+  - Transform, prepare, and clean data for analysis
+  - Build and monitor data pipelines
+- Components
+  - console
+  - Data Catalog
+  - crawler and classifiers
+  - ETL operations
+  - jobs system (workflow)
+- Architecture
+  - <p align='center'><img src='./img/README_2023-04-01-17-51-54.png' width='70%'></p>
+  - [AWS Black Belt Online Seminar](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2023_AWS-Glue_0331_v1.pdf)
+- ref
+  - [AWS再入門ブログリレー2022 AWS Glue編](https://dev.classmethod.jp/articles/re-introduction-2022-aws-glue/)
 ## Other
 ### 検証環境と商用環境におけるMLパイプラインの違いは何か？
 - ChatGPTの回答
@@ -75,7 +88,8 @@
 - [AWS再入門ブログリレー2022 Amazon SageMaker 編](https://dev.classmethod.jp/articles/re-introduction-2022-sagemaker/)
 - [[Amazon SageMaker Data Wrangler] 機械学習用データを簡単で最速に準備できる機能を使ってみた](https://dev.classmethod.jp/articles/amazon-sagemaker-data-wrangler-with-demo-titanic/)
 - [Amazon SageMaker Data Wrangler が Amazon EMR Presto をビッグデータクエリエンジンとしてサポート](https://aws.amazon.com/jp/about-aws/whats-new/2022/12/sagemaker-data-wrangler-supports-amazon-emr-presto-data-source-query-engine/)
-- []()
+- [Amazon SageMaker による実験管理](https://pages.awscloud.com/rs/112-TZM-766/images/202207_AWS_Black_Belt_AWS_AIML_Dark_02_Experiments_Management.pdf)
+  - 
 - []()
 - []()
 ### Amazon SageMakerネットワーク設計パターン
