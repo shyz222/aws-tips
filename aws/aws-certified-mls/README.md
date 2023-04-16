@@ -10,6 +10,7 @@
   - [Other](#other)
     - [検証環境と商用環境におけるMLパイプラインの違いは何か？](#検証環境と商用環境におけるmlパイプラインの違いは何か)
     - [Amazon SageMaker各種サービスについて](#amazon-sagemaker各種サービスについて)
+    - [Amazon SageMaker による実験管理](#amazon-sagemaker-による実験管理)
     - [Amazon SageMakerネットワーク設計パターン](#amazon-sagemakerネットワーク設計パターン)
 # 目的
 - AWSのML関連の知識習得
@@ -88,10 +89,129 @@
 - [AWS再入門ブログリレー2022 Amazon SageMaker 編](https://dev.classmethod.jp/articles/re-introduction-2022-sagemaker/)
 - [[Amazon SageMaker Data Wrangler] 機械学習用データを簡単で最速に準備できる機能を使ってみた](https://dev.classmethod.jp/articles/amazon-sagemaker-data-wrangler-with-demo-titanic/)
 - [Amazon SageMaker Data Wrangler が Amazon EMR Presto をビッグデータクエリエンジンとしてサポート](https://aws.amazon.com/jp/about-aws/whats-new/2022/12/sagemaker-data-wrangler-supports-amazon-emr-presto-data-source-query-engine/)
-- [Amazon SageMaker による実験管理](https://pages.awscloud.com/rs/112-TZM-766/images/202207_AWS_Black_Belt_AWS_AIML_Dark_02_Experiments_Management.pdf)
-  - 
-- []()
-- []()
+- [AWS が実現する MLOps のためのツール群のご紹介](https://pages.awscloud.com/rs/112-TZM-766/images/3.AWS_MLOps_Tool.pdf)
+  - Sagemeker vs MWAA(Managed Wrokflow for Apache Airflow) vs Step Functionsについて記載されている
+### [Amazon SageMaker による実験管理](https://pages.awscloud.com/rs/112-TZM-766/images/202207_AWS_Black_Belt_AWS_AIML_Dark_02_Experiments_Management.pdf)
+- 前提
+  - 柔軟性
+    - データサイエンティストはどんなフレームワーク (TensorFlow や PyTorch など) にも対応できる
+  - 再現性
+    - データサイエンティストは過去の実験（コード、データ、結果）を再現または観測できる
+  - 再利用性
+    - データサイエンティストとMLエンジニアはソースコードと ML パイプラインを再利用することで、不整合やコスト増を回避できる
+  - スケーラビリティ
+    - データサイエンティストとMLエンジニアは、リソースとサービスをオンデマンドで拡張できる
+  - 監査性
+    - データサイエンティスト、IT、法務部門は、ログ、バージョン、アーティファクトとデータの依存関係を監査できる
+  - 一貫性
+    - MLOps は複数の環境で構成されているため、基盤は環境間のばらつきを排除する必要がある
+
+- MLOps 成熟度モデル
+  - Overview
+    - 初期 (Initial)フェーズ
+      - データサイエンティストは SageMakerサービスを使用して AWS上でモデルを実験、構築、学習、デプロイ
+      - 推奨される開発環境はAmazon SageMaker Studio
+      - この環境では、データサイエンティストが Studio ノートブックに基づいて、実験や共同作業を行える
+    - 反復可能 (Repeatable)フェーズ
+      - 次のステップはデータを前処理し、モデルを構築・学習するための自動ワークフロー (MLパイプライン) を作成する
+      - データサイエンティストは、MLエンジニアとそれぞれ別の環境で協力して、Amazon SageMaker Pipelinesを使用してオーケストレーションされた、堅牢で本番稼働可能なアルゴリズムとソースコードを作成
+      - 生成されたモデルは Amazon SageMaker Model Registryに保存され、ベンチマークされる
+    - 信頼可能 (Reliable) フェーズ
+      - モデルはMLパイプラインで生成されていますが、production環境に移行する前にテストする必要がある
+      - そのため、このフェーズでは、分離されたstaging環境（またはpre-production環境）において、モデルやこれをトリガーがするインフラストラクチャの両方に対して自動テストを導入する
+      - staging環境とは、production環境をシミュレートするための環境
+      - テストが正常に実行されると、モデルは分離されたproduction環境にデプロイされる
+      - 複数の環境をまたいでモデルをデプロイするためには、手動による評価と承認が必要
+    - スケーラブルフェーズ
+      - 最初の MLソリューションを本番稼働させた後は、複数のデータサイエンスチームが数十または数百の MLユースケースを共同で運用できるようにするために MLOps基盤を拡張する必要がある
+      - このフェーズでは、ソリューションのテンプレート化を導入する
+      - これにより、新たに製品化するソリューションの開発時間を数週間から数日に短縮し、このソリューションが価値を発揮するまでの期間を短縮する
+      - さらに、セキュアなMLOps環境のインスタンス化を自動化して、複数のチームがそれぞれ所有するデータを自身で操作できるようにすることで、IT部門への依存とオーバーヘッドを減らす
+  - Details
+    - 初期 (Initial)フェーズ
+      - 初期フェーズにおけるゴールは、セキュアな実験環境を作ること
+      - データサイエンティストは、この環境を使ってデータのスナップショットを取得し、SageMakerノートブックを使用して実験
+      - また、MLを利用して特定のビジネス上の問題を解決できることを実証
+      - これを実現するには、Studio環境に対してVPC エンドポイント経由でのアクセスを提供することを推奨
+      - SageMakerサービスに加えて、データサイエンティストは Amazon EMR、Amazon Athena、AWS Glueなどの他のサービスを使用してデータを処理
+      - ノートブックはAWS CodeCommitリポジトリに保存され、バージョン管理される
+        - <p align='center'><img src='./img/README_2023-04-02-19-56-12.png' width='30%'></p>
+    - 反復可能 (Repeatable)フェーズ
+      - このステップのゴールは MLソリューションの本番稼働化を開始することです
+      - 環境の分離
+        - データレイク アカウント ( Data Lake Account)
+          - オンプレミス (または他のシステム) から取り込まれたすべてのデータをクラウドに保存
+          - データエンジニアは、複数のデータソースを組み合わせた抽出 (Extract)、変換 (Transform)、読み込み (Load)のETLパイプラインを作成し、MLのユースケースに必要なデータセットを準備
+          - データは AWS Glue Data Catalogでカタログ化され、AWS Lake Formation (データガバナンスレイヤー) によって他のユーザーやアカウントと共有されます。
+        - 実験アカウント ( Experimentation Account)
+          - データサイエンティストが研究を行えるようにする
+          - 初期フェーズとの唯一の違いは、データスナップショットの取得元がデータレイクであること
+          - データサイエンティストは特定のデータセットにのみアクセス可能で、GDPRやその他のデータプライバシーの制約に応じて匿名化されていることがある
+          - さらに、実験アカウントはインターネットにアクセスして、データサイエンティストが新しいデータサイエンスフレームワークまたはサードパーティのオープンソースライブラリを使用できるようにする場合がある
+          - そのため、実験用アカウントはproductionとは別の環境として必要
+        - 開発アカウント ( Dev Account)
+          - production環境の第１ステージとなるアカウント
+          - データサイエンティストはノートブックの世界から自動ワークフローと SageMaker Pipelinesの世界へと移行する
+          - また、MLエンジニアと協力してコードを抽象化し、テストのカバレッジ、エラー処理、コード品質を保証する
+          - 目標は MLパイプラインを開発すること
+          - MLパイプラインとは、モデルの前処理、学習、評価、および SageMaker Model Registryへの登録を行う自動ワークフロー
+          - MLパイプラインのデプロイは CI/CD パイプライン経由でのみ行われ、AWS マネジメントコンソールへのアクセスは制限される
+          - ML パイプラインはデータレイク内の本番データにアクセス (読み取り専用)できるため、インターネット接続は許可されない
+        - ツール (自動化)アカウント ( Tooling Account)
+          - CodeCommitリポジトリ、AWS CodePipeline CI/CD パイプライン、SageMaker Model Registry、および カスタムコンテナをホストするためのAmazon ECR をホストする
+          - データレイクはデータに対する信頼できる唯一の情報源 (single point of truth)であるため、ツールアカウントにおいてはコード、コンテナ、作成されたアーティファクトを管理対象とする
+          - 
+          - <p align='center'><img src='./img/README_2023-04-02-20-13-59.png' width='100%'></p>
+      - ノートブックからMLパイプラインへ
+        - デプロイを自動化するには、ノートブックから ML パイプラインに移行し、かつコードリポジトリとデータ構造を標準化する方法を理解することが重要
+        - 開発環境のゴールは、ノートブックのコードを再構築、補完、改善、スケール、ML パイプラインに移行すること
+        - MLパイプラインは、データの前処理、モデルの学習または利用、結果の後処理を行う一連のステップ
+        - 各ステップは正確に 1 つのタスク (ある特定のデータ変換) を実行し、再利用できるように十分に抽象化 (たとえば、カラム名を入力パラメータとして渡すなど) する必要がある
+        - ML パイプラインを実装するには、データサイエンティスト (または ML エンジニア) が SageMaker Pipelinesを使用する
+        - MLパイプラインは連続した一連のステップ (SageMaker Processingジョブ、学習、HPO) で、SageMaker PipelinesではJSON形式で記述できる
+        - JSON形式のパイプライン定義ファイルを作るためにPython SDKを利用できる。
+        - パイプライン定義は、有向非巡回グラフ (Directed Acyclic Graph: DAG) を使用してパイプラインをエンコード
+        - ユースケースに応じて、MLパイプラインを学習とバッチ推論という 2 つの主なタイプに分けられる
+          - 学習
+            - <p align='center'><img src='./img/README_2023-04-02-20-47-17.png' width='70%'></p>
+            - 前処理 (Pre-Processing)
+              - 主にデータ変換（データの分割とサンプリング (学習、検証、テストセット)、ワンホットエンコーディングまたはベクトル化、ビン化、スケーリング）
+            - モデル学習 (Model Training)
+              - データサイエンティストが最適なモデル構成を知っている場合は、1つの学習ジョブを実施
+              - もしくは、ハイパーパラメータ最適化 (HPO) ジョブを実施することで、AWS がモデルに最適なハイパーパラメータを（ベイズ最適化などにて）発見し、該当するモデルアーティファクトを作成
+            - 評価 (Model Evaluation)
+              - 作成されたモデルアーティファクトを使用して、検証データセットに対する推論を実行
+              - 次に、MLパイプラインは、生成された精度指標 (F1、精度、ゲイン十分位数など) が必要な閾値チェックを通過したかどうかを確認
+              - このステップが成功すると、モデルアーティファクトとメタデータがモデルレジストリに登録され、production環境へのデプロイに利用される
+            - ベースライン抽出 (Export Baseline)
+              - Amazon SageMaker Model Monitorの機能を使う
+              - このステップで生成される統計量を含む JSON オブジェクトは、後にモデルドリフト検出に使用され、SageMaker モデルレジストリでモデルメタデータとしてホストすることが可能
+          - バッチ推論
+            - <p align='center'><img src='./img/README_2023-04-02-20-51-52.png' width='50%'></p>
+            - 前処理 (Pre-Processing)
+              - データサンプリングや正解データのカラムの扱い以外はほぼ学習の時と同じ
+            - バッチ推論 (Batch Inference)
+              - 推論用のデータを対応するエンドポイントにバッチで送信するステップで、SageMakerのバッチ変換を使用して実装できる
+            - 後処理 (Post-Processing) ステップでは、結果の分布などの追加の統計情報を生成したり、結果を外部 ID と結合したりする
+            - 次に、モデルモニター (Model Monitoring) ステップは、学習に使用されたデータ (モデルレジストリ内のモデル JSON メタデータ) のベースライン統計を、推論用の新しいデータと比較する
+      - リポジトリの標準化
+        - モデル構築・学習リポジトリ
+          - ３つの主要なフォルダに分かれている
+            - アルゴリズム
+            - MLパイプライン
+            - ノートブック
+        - デプロイリポジトリ
+          - ３つの主要なフォルダに分かれている
+            - 推論の設定
+            - アプリケーションのインフラストラクチャ
+            - テスト
+        - モデル構築・学習リポジトリに変更をコミットすることで、CI/CDパイプラインはリポジトリ構造の検証、テストの実行、MLパイプラインのデプロイと実行を行う
+        - 別のCI/CDパイプラインがモデルの展開を担当する（次で説明）
+      - リポジトリのブランチとCI/CDの標準化
+      - データ構造の標準化
+
+    - 信頼可能 (Reliable) フェーズ
+    - スケーラブルフェーズ
 ### Amazon SageMakerネットワーク設計パターン
 - [【Amazon SageMaker】ネットワーク設計パターンをまとめてみた](https://dev.classmethod.jp/articles/sagemaker-network-vpc-architecture-2022-04/)
 - [閉域網で Amazon SageMaker を利用する際のポイントと手順](https://aws.amazon.com/jp/blogs/news/internet-free-sagemaker/)
