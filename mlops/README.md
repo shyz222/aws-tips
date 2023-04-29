@@ -41,6 +41,9 @@
    - <p align='center'><img src='./img/README_2022-12-03-16-06-04.png' width='70%'></p>
    - ref
      - [AWSで構築するMLOps基盤](https://pages.awscloud.com/rs/112-TZM-766/images/20201015_AWS%E3%81%A6%E3%82%99%E6%A7%8B%E7%AF%89%E3%81%99%E3%82%8BMLOps%E5%9F%BA%E7%9B%A4_%E9%85%8D%E5%B8%83%E7%89%88__AIMLTokyo7.pdf)
+     - [Amazon SageMaker による実験管理](https://pages.awscloud.com/rs/112-TZM-766/images/202207_AWS_Black_Belt_AWS_AIML_Dark_02_Experiments_Management.pdf)
+       - <p align='center'><img src='./img/README_2023-04-02-19-19-51.png' width='70%'></p>
+       - <p align='center'><img src='./img/README_2023-04-02-19-21-19.png' width='70%'></p>
 - 他のシステムにはないAL/MLシステムの特徴
   - チームのスキル:
     > ML プロジェクトのチームには通常、探索的データ分析、モデル開発、テストに注力するデータ サイエンティストや ML 研究者が含まれます。これらのメンバーが、本番環境クラスのサービスをビルドできる経験豊富なソフトウェア エンジニアではない場合があります。
@@ -72,4 +75,5 @@
       - <p align='center'><img src='./img/README_2022-12-03-16-54-57.png' width='70%'></p>
     - ref
       - [MLOps:機械学習における継続的デリバリーと自動化のパイプライン](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
-- 
+- [Amazon SageMakerを利用したエンタープライズのためのMLOps基盤ロードマップ](https://aws.amazon.com/jp/blogs/news/mlops-foundation-roadmap-for-enterprises-with-amazon-sagemaker-jp/)
+  - [詳細](../aws/aws-certified-mls/README.md)

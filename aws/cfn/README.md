@@ -11,16 +11,23 @@
 - 組み込み関数!Ref,!GetAttを使用したぐらい...
 - なので、設計思想をきちんと学習した上で大きいシステムのIaCがどうあるべきか学んでおきたい
 # 参考
-- [AWS CloudFormation ベストプラクティス](https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/best-practices.html)
-- [20200826 AWS Black Belt Online Seminar AWS CloudFormation](https://www.slideshare.net/AmazonWebServicesJapan/20200826-aws-black-belt-online-seminar-aws-cloudformation-238501102)
-- [AWS Black Belt Online Seminar AWS CloudFormation アップデート](https://www.slideshare.net/AmazonWebServicesJapan/aws-black-belt-online-seminar-aws-cloudformation)
-- [【CloudFormation】Black Beltをブログ化してみた・前編](https://dev.classmethod.jp/articles/blackbelt-cloudformation-2018/)
-- [【CloudFormation】Black Beltをブログ化してみた・後編](https://dev.classmethod.jp/articles/blackbelt-cloudformation-2018-2/)
-- [CloudFormationの実践ベストプラクティス](https://qiita.com/uramotot/items/4a55ccad14f44f5006f6)
-- [GitHub/CodeBuild/CodePipelineを利用してCloudFormationのCI/CDパイプラインを構築する](https://dev.classmethod.jp/articles/developing-cloudformation-ci-cd-pipeline-with-github-codebuild-codepipeline/)
-- [CI/CDプロセスにCloudFormationを本気導入するために考えるべきこと](https://speakerdeck.com/hamadakoji/cdpurosesunicloudformationwoben-qi-dao-ru-surutamenikao-erubekikoto)
-- [AWS CloudFormation 向け TaskCat CI/CD パイプライン](https://aws.amazon.com/jp/solutions/implementations/taskcat-ci/)
-- []()
+- [AWS Black Belt Online Seminar AWS CloudFormation](https://pages.awscloud.com/rs/112-TZM-766/images/20200826_AWS-BlackBelt_AWS-CloudFormation.pdf)
+- [AWS Black Belt Online Seminar AWS CloudFormation deep dive](https://pages.awscloud.com/rs/112-TZM-766/images/20201006_BlackBelt_CloudFormation_DeepDive.pdf)
 
 # 内容
-- 
+- ライフサイクル別のテンプレート管理
+  - <p align='center'><img src='./img/README_2023-04-16-18-54-38.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-16-18-54-57.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-16-18-55-22.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-16-18-55-42.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-16-18-57-48.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-16-18-58-07.png' width='70%'></p>
+- スタックの整理
+  - 下記2つの一般的なフレームワークを使用できる
+    - 多層アーキテクチャー
+      - 多層アーキテクチャーは、スタックを積み上げて構築する複数の水平の層に整理します。各層はその直下の層に依存します。各層には 1 つ以上のスタックを持つことができますが、各層のスタックは類似したライフサイクルと所有権を持つ AWS リソースを持つ必要があります。
+      - ref
+        - [CloudFormationの実践ベストプラクティス](https://qiita.com/uramotot/items/4a55ccad14f44f5006f6#my-cloudformation%E3%83%99%E3%82%B9%E3%83%88%E3%83%97%E3%83%A9%E3%82%AF%E3%83%86%E3%82%A3%E3%82%B9%E3%81%AE%E6%A7%8B%E6%88%90)
+        - [CloudFormationのベストプラクティスを整理する](https://zenn.dev/trkdkjm/articles/728cac0bbb8119)
+    - サービス指向アーキテクチャー(SOA)
+      - サービス指向アーキテクチャーを使用すると、業務上の大きな問題を処理しやすい大きさに整理できます。これらのパートはそれぞれ、明確に定義された目的があり、機能の自己充足単位を表します。これらのサービスを、それぞれ独自のライフサイクルと所有者があるスタックにマッピングできます。これらのサービス (スタック) を 1 つに繋いで、相互に通信するようにできます。
