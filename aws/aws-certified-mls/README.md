@@ -12,6 +12,7 @@
     - [Amazon SageMaker各種サービスについて](#amazon-sagemaker各種サービスについて)
     - [Amazon SageMakerを利用したエンタープライズのためのMLOps基盤ロードマップ](#amazon-sagemakerを利用したエンタープライズのためのmlops基盤ロードマップ)
     - [Amazon SageMakerネットワーク設計パターン](#amazon-sagemakerネットワーク設計パターン)
+    - [AWS Black Belt ML-Dark(ML Enablement Series)](#aws-black-belt-ml-darkml-enablement-series)
 # 目的
 - AWSのML関連の知識習得
 # 背景
@@ -159,3 +160,4 @@
 ### Amazon SageMakerネットワーク設計パターン
 - [【Amazon SageMaker】ネットワーク設計パターンをまとめてみた](https://dev.classmethod.jp/articles/sagemaker-network-vpc-architecture-2022-04/)
 - [閉域網で Amazon SageMaker を利用する際のポイントと手順](https://aws.amazon.com/jp/blogs/news/internet-free-sagemaker/)
+### [AWS Black Belt ML-Dark(ML Enablement Series)](https://aws.amazon.com/jp/events/aws-event-resource/archive/?cards.sort-by=item.additionalFields.SortDate&cards.sort-order=desc&awsf.tech-category=*all&cards.q=ml-dark&cards.q_operator=AND)
