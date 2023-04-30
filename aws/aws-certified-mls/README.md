@@ -12,7 +12,7 @@
     - [Amazon SageMaker各種サービスについて](#amazon-sagemaker各種サービスについて)
     - [Amazon SageMakerを利用したエンタープライズのためのMLOps基盤ロードマップ](#amazon-sagemakerを利用したエンタープライズのためのmlops基盤ロードマップ)
     - [Amazon SageMakerネットワーク設計パターン](#amazon-sagemakerネットワーク設計パターン)
-    - [AWS Black Belt ML-Dark(ML Enablement Series)](#aws-black-belt-ml-darkml-enablement-series)
+    - [AWS Black Belt ML Enablement Series](#aws-black-belt-ml-enablement-series)
 # 目的
 - AWSのML関連の知識習得
 # 背景
@@ -160,4 +160,13 @@
 ### Amazon SageMakerネットワーク設計パターン
 - [【Amazon SageMaker】ネットワーク設計パターンをまとめてみた](https://dev.classmethod.jp/articles/sagemaker-network-vpc-architecture-2022-04/)
 - [閉域網で Amazon SageMaker を利用する際のポイントと手順](https://aws.amazon.com/jp/blogs/news/internet-free-sagemaker/)
-### [AWS Black Belt ML-Dark(ML Enablement Series)](https://aws.amazon.com/jp/events/aws-event-resource/archive/?cards.sort-by=item.additionalFields.SortDate&cards.sort-order=desc&awsf.tech-category=*all&cards.q=ml-dark&cards.q_operator=AND)
+### [AWS Black Belt ML Enablement Series](https://aws.amazon.com/jp/blogs/news/tag/ml-enablement-series/)
+- [【ML-Ligiht-01】機械学習モデル開発プロジェクトの進め方](https://pages.awscloud.com/rs/112-TZM-766/images/202205_AWS_Black_Belt_AWS_AIML_Light_01_Introduction.pdf)
+- [【ML-Dark-01】Amazon SageMaker Training 機械学習のモデル開発の試行錯誤を簡単にする](https://pages.awscloud.com/rs/112-TZM-766/images/202205_AWS_Black_Belt_AIML_Dark_01_AmazonSageMakerTraining.pdf)
+- [【ML-Dark-02】Amazon SageMakerによる実験管理](https://pages.awscloud.com/rs/112-TZM-766/images/202207_AWS_Black_Belt_AWS_AIML_Dark_02_Experiments_Management.pdf)
+  - <p align='center'><img src='./img/README_2023-04-30-15-44-43.png' width='70%'></p>
+- [【ML-Dark-03】Amazon SageMaker 推論 Part1 推論の頻出課題とSageMakerによる解決方法](https://pages.awscloud.com/rs/112-TZM-766/images/202208_AWS_Black_Belt_AWS_ML_Enablement_Dark_03.pdf)
+- [【ML-Dark-04】Amazon SageMaker 推論 Part2 すぐにプロダクション利用できる！モデルをデプロイして推論する方法](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Inference-Part-2_0831_v1.pdf)
+- [【ML-Dark-05】Amazon SageMaker 推論 Part3 もう悩まない︕機械学習モデルのデプロイパターンと戦略](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Inference-Part-3_1014_v1.pdf)
+- [【ML-Dark-07】Amazon SageMaker モニタリング Part1 Amazon SageMaker Model Monitorを理解しよう](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Monitoring-Part-1_1031_v1.pdf)
+- [【ML-Dark-08】Amazon SageMaker モニタリング Part2 データと推論結果の変化に気づく](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Monitoring-Part-2_1231_v1.pdf)
