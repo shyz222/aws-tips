@@ -25,8 +25,6 @@
 - [2021年05月時点で自分が実践しているMLOpsの情報収集方法](https://shunyaueta.com/posts/2021-05-29/)
 - [機械学習のルール](https://developers.google.com/machine-learning/guides/rules-of-ml)
 - [MLOps: 機械学習における継続的デリバリーと自動化のパイプライン](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
-- []()
-- []()
 # 内容
 ## Data Engineering
 ### AWS Kinesis
@@ -174,6 +172,11 @@
   - <p align='center'><img src='./img/README_2023-04-30-16-45-57.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2023-04-30-16-45-31.png' width='70%'></p>
   - [開発環境構築手順書の例](https://docs.wantedly.dev/fields/dev-tools/codespaces)
+  - <p align='center'><img src='./img/README_2023-04-30-17-03-48.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-07-50.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-09-26.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-09-55.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-10-15.png' width='70%'></p>
 - [【ML-Dark-01】Amazon SageMaker Training 機械学習のモデル開発の試行錯誤を簡単にする](https://pages.awscloud.com/rs/112-TZM-766/images/202205_AWS_Black_Belt_AIML_Dark_01_AmazonSageMakerTraining.pdf)
 - [【ML-Dark-02】Amazon SageMakerによる実験管理](https://pages.awscloud.com/rs/112-TZM-766/images/202207_AWS_Black_Belt_AWS_AIML_Dark_02_Experiments_Management.pdf)
   - <p align='center'><img src='./img/README_2023-04-30-15-44-43.png' width='70%'></p>
