@@ -161,7 +161,11 @@
 - [【Amazon SageMaker】ネットワーク設計パターンをまとめてみた](https://dev.classmethod.jp/articles/sagemaker-network-vpc-architecture-2022-04/)
 - [閉域網で Amazon SageMaker を利用する際のポイントと手順](https://aws.amazon.com/jp/blogs/news/internet-free-sagemaker/)
 ### [AWS Black Belt ML Enablement Series](https://aws.amazon.com/jp/blogs/news/tag/ml-enablement-series/)
+- 印象に残った箇所のみキャプチャ
 - [【ML-Ligiht-01】機械学習モデル開発プロジェクトの進め方](https://pages.awscloud.com/rs/112-TZM-766/images/202205_AWS_Black_Belt_AWS_AIML_Light_01_Introduction.pdf)
+  - <p align='center'><img src='./img/README_2023-04-30-16-05-38.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-16-03-03.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-16-03-39.png' width='70%'></p>
 - [【ML-Dark-01】Amazon SageMaker Training 機械学習のモデル開発の試行錯誤を簡単にする](https://pages.awscloud.com/rs/112-TZM-766/images/202205_AWS_Black_Belt_AIML_Dark_01_AmazonSageMakerTraining.pdf)
 - [【ML-Dark-02】Amazon SageMakerによる実験管理](https://pages.awscloud.com/rs/112-TZM-766/images/202207_AWS_Black_Belt_AWS_AIML_Dark_02_Experiments_Management.pdf)
   - <p align='center'><img src='./img/README_2023-04-30-15-44-43.png' width='70%'></p>
