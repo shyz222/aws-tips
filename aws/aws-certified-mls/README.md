@@ -178,8 +178,22 @@
   - <p align='center'><img src='./img/README_2023-04-30-17-09-55.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2023-04-30-17-10-15.png' width='70%'></p>
 - [【ML-Dark-01】Amazon SageMaker Training 機械学習のモデル開発の試行錯誤を簡単にする](https://pages.awscloud.com/rs/112-TZM-766/images/202205_AWS_Black_Belt_AIML_Dark_01_AmazonSageMakerTraining.pdf)
+  - <p align='center'><img src='./img/README_2023-04-30-17-30-25.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-33-22.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-33-43.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-36-09.png' width='70%'></p>
 - [【ML-Dark-02】Amazon SageMakerによる実験管理](https://pages.awscloud.com/rs/112-TZM-766/images/202207_AWS_Black_Belt_AWS_AIML_Dark_02_Experiments_Management.pdf)
   - <p align='center'><img src='./img/README_2023-04-30-15-44-43.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-46-49.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-51-06.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-51-25.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-51-42.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-52-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-52-33.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-56-31.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-56-47.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-57-06.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-57-29.png' width='70%'></p>
 - [【ML-Dark-03】Amazon SageMaker 推論 Part1 推論の頻出課題とSageMakerによる解決方法](https://pages.awscloud.com/rs/112-TZM-766/images/202208_AWS_Black_Belt_AWS_ML_Enablement_Dark_03.pdf)
 - [【ML-Dark-04】Amazon SageMaker 推論 Part2 すぐにプロダクション利用できる！モデルをデプロイして推論する方法](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Inference-Part-2_0831_v1.pdf)
 - [【ML-Dark-05】Amazon SageMaker 推論 Part3 もう悩まない︕機械学習モデルのデプロイパターンと戦略](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Inference-Part-3_1014_v1.pdf)
