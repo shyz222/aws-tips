@@ -195,6 +195,15 @@
   - <p align='center'><img src='./img/README_2023-04-30-17-57-06.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2023-04-30-17-57-29.png' width='70%'></p>
 - [【ML-Dark-03】Amazon SageMaker 推論 Part1 推論の頻出課題とSageMakerによる解決方法](https://pages.awscloud.com/rs/112-TZM-766/images/202208_AWS_Black_Belt_AWS_ML_Enablement_Dark_03.pdf)
+  - <p align='center'><img src='./img/README_2023-05-03-14-51-25.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-14-53-01.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-14-53-54.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-14-54-17.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-14-56-37.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-15-01-25.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-15-01-41.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-15-02-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-15-03-49.png' width='70%'></p>
 - [【ML-Dark-04】Amazon SageMaker 推論 Part2 すぐにプロダクション利用できる！モデルをデプロイして推論する方法](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Inference-Part-2_0831_v1.pdf)
 - [【ML-Dark-05】Amazon SageMaker 推論 Part3 もう悩まない︕機械学習モデルのデプロイパターンと戦略](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Inference-Part-3_1014_v1.pdf)
 - [【ML-Dark-07】Amazon SageMaker モニタリング Part1 Amazon SageMaker Model Monitorを理解しよう](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Monitoring-Part-1_1031_v1.pdf)
