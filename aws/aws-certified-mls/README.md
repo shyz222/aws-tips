@@ -12,6 +12,8 @@
     - [Amazon SageMaker各種サービスについて](#amazon-sagemaker各種サービスについて)
     - [Amazon SageMakerを利用したエンタープライズのためのMLOps基盤ロードマップ](#amazon-sagemakerを利用したエンタープライズのためのmlops基盤ロードマップ)
     - [Amazon SageMakerネットワーク設計パターン](#amazon-sagemakerネットワーク設計パターン)
+    - [MLflow と Amazon SageMaker による機械学習のライフサイクル管理](#mlflow-と-amazon-sagemaker-による機械学習のライフサイクル管理)
+    - [Building, automating, managing, and scaling ML workflows using Amazon SageMaker Pipelines](#building-automating-managing-and-scaling-ml-workflows-using-amazon-sagemaker-pipelines)
     - [AWS Black Belt ML Enablement Series](#aws-black-belt-ml-enablement-series)
 # 目的
 - AWSのML関連の知識習得
@@ -158,6 +160,14 @@
 ### Amazon SageMakerネットワーク設計パターン
 - [【Amazon SageMaker】ネットワーク設計パターンをまとめてみた](https://dev.classmethod.jp/articles/sagemaker-network-vpc-architecture-2022-04/)
 - [閉域網で Amazon SageMaker を利用する際のポイントと手順](https://aws.amazon.com/jp/blogs/news/internet-free-sagemaker/)
+### [MLflow と Amazon SageMaker による機械学習のライフサイクル管理](https://aws.amazon.com/jp/blogs/news/machine-learning-managing-your-machine-learning-lifecycle-with-mlflow-and-amazon-sagemaker/)
+- アーキテクチャの概要
+  - MLflow TrackingサーバーをDocker化し、Fargate上でホストする
+  - MLflow TrackingサーバーのアーティファクトストアとしてS3バケットを、バックエンドストアとして Amazon RDS for MySQL インスタンスを使用
+  - <p align='center'><img src='./img/README_2023-05-04-16-21-18.png' width='70%'></p>
+### [Building, automating, managing, and scaling ML workflows using Amazon SageMaker Pipelines](https://aws.amazon.com/jp/blogs/machine-learning/building-automating-managing-and-scaling-ml-workflows-using-amazon-sagemaker-pipelines/)
+- <p align='center'><img src='./img/README_2023-05-04-16-26-30.png' width='70%'></p>
+- <p align='center'><img src='./img/README_2023-05-04-16-26-49.png' width='70%'></p>
 ### [AWS Black Belt ML Enablement Series](https://aws.amazon.com/jp/blogs/news/tag/ml-enablement-series/)
 - 印象に残った箇所のみキャプチャ
 - [【ML-Ligiht-01】機械学習モデル開発プロジェクトの進め方](https://pages.awscloud.com/rs/112-TZM-766/images/202205_AWS_Black_Belt_AWS_AIML_Light_01_Introduction.pdf)
@@ -215,5 +225,20 @@
   - <p align='center'><img src='./img/README_2023-05-03-15-36-44.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2023-05-03-15-42-31.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2023-05-03-15-43-50.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-15-48-46.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-15-49-04.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-15-49-22.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-15-58-47.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-15-59-04.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-15-59-37.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-00-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-00-28.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-00-54.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-05-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-05-28.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-06-09.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-06-36.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-07-07.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-07-32.png' width='70%'></p>
 - [【ML-Dark-07】Amazon SageMaker モニタリング Part1 Amazon SageMaker Model Monitorを理解しよう](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Monitoring-Part-1_1031_v1.pdf)
 - [【ML-Dark-08】Amazon SageMaker モニタリング Part2 データと推論結果の変化に気づく](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Monitoring-Part-2_1231_v1.pdf)
