@@ -240,5 +240,11 @@
   - <p align='center'><img src='./img/README_2023-05-04-16-06-36.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2023-05-04-16-07-07.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2023-05-04-16-07-32.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-55-55.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-56-47.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-57-08.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-57-29.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-57-51.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-58-17.png' width='70%'></p>
 - [【ML-Dark-07】Amazon SageMaker モニタリング Part1 Amazon SageMaker Model Monitorを理解しよう](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Monitoring-Part-1_1031_v1.pdf)
 - [【ML-Dark-08】Amazon SageMaker モニタリング Part2 データと推論結果の変化に気づく](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Monitoring-Part-2_1231_v1.pdf)
