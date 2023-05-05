@@ -278,5 +278,22 @@
   - <p align='center'><img src='./img/README_2023-05-05-16-53-44.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2023-05-05-16-54-02.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2023-05-05-16-54-24.png' width='70%'></p>
-  - 
 - [【ML-Dark-08】Amazon SageMaker モニタリング Part2 データと推論結果の変化に気づく](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Monitoring-Part-2_1231_v1.pdf)
+  - <p align='center'><img src='./img/README_2023-05-05-17-01-53.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-15-47.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-16-13.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-16-28.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-17-04.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-18-58.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-21-51.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-24-28.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-25-22.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-28-14.png' width='70%'></p>
+- [【ML-Dark-08】Amazon SageMaker モニタリング Part3 バイアス、Feature Attributionをモニタしよう](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2023_Amazon-SageMaker-Monitoring-Part-3_0228_v1.pdf)
+  - <p align='center'><img src='./img/README_2023-05-05-17-01-53.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-30-24.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-31-15.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-36-42.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-36-58.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-37-14.png' width='70%'></p>
+  - 
