@@ -247,4 +247,36 @@
   - <p align='center'><img src='./img/README_2023-05-04-16-57-51.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2023-05-04-16-58-17.png' width='70%'></p>
 - [【ML-Dark-07】Amazon SageMaker モニタリング Part1 Amazon SageMaker Model Monitorを理解しよう](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Monitoring-Part-1_1031_v1.pdf)
+  - <p align='center'><img src='./img/README_2023-05-04-17-24-12.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-17-25-07.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-17-26-12.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-17-26-30.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-17-39-43.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-17-39-17.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-17-40-25.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-17-40-48.png' width='70%'></p>
+  - ベースラインジョブ
+    - ベースラインデータを作成するためのジョブ
+    - ベースライン
+      - 推論時の入出力結果と比較するための基準となる情報
+      - 主にモデルトレーニング時点の学習データを基にして作成する
+  - モニタリングジョブ
+    - ベースラインデータと推論リクエスト、レスポンスデータを比較するジョブ
+  - Ground Truth(正解データ)マージジョブ
+    - モデル品質とモデルバイアスをモニタリングする場合に必要なマージデータを作成するジョブ
+  - <p align='center'><img src='./img/README_2023-05-05-16-27-23.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-38-44.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-38-59.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-39-30.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-39-49.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-40-17.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-41-20.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-41-35.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-44-53.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-51-38.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-51-53.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-53-44.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-54-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-54-24.png' width='70%'></p>
+  - 
 - [【ML-Dark-08】Amazon SageMaker モニタリング Part2 データと推論結果の変化に気づく](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Monitoring-Part-2_1231_v1.pdf)
