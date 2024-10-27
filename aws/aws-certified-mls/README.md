@@ -12,6 +12,9 @@
     - [Amazon SageMaker各種サービスについて](#amazon-sagemaker各種サービスについて)
     - [Amazon SageMakerを利用したエンタープライズのためのMLOps基盤ロードマップ](#amazon-sagemakerを利用したエンタープライズのためのmlops基盤ロードマップ)
     - [Amazon SageMakerネットワーク設計パターン](#amazon-sagemakerネットワーク設計パターン)
+    - [MLflow と Amazon SageMaker による機械学習のライフサイクル管理](#mlflow-と-amazon-sagemaker-による機械学習のライフサイクル管理)
+    - [Building, automating, managing, and scaling ML workflows using Amazon SageMaker Pipelines](#building-automating-managing-and-scaling-ml-workflows-using-amazon-sagemaker-pipelines)
+    - [AWS Black Belt ML Enablement Series](#aws-black-belt-ml-enablement-series)
 # 目的
 - AWSのML関連の知識習得
 # 背景
@@ -24,8 +27,6 @@
 - [2021年05月時点で自分が実践しているMLOpsの情報収集方法](https://shunyaueta.com/posts/2021-05-29/)
 - [機械学習のルール](https://developers.google.com/machine-learning/guides/rules-of-ml)
 - [MLOps: 機械学習における継続的デリバリーと自動化のパイプライン](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
-- []()
-- []()
 # 内容
 ## Data Engineering
 ### AWS Kinesis
@@ -159,3 +160,154 @@
 ### Amazon SageMakerネットワーク設計パターン
 - [【Amazon SageMaker】ネットワーク設計パターンをまとめてみた](https://dev.classmethod.jp/articles/sagemaker-network-vpc-architecture-2022-04/)
 - [閉域網で Amazon SageMaker を利用する際のポイントと手順](https://aws.amazon.com/jp/blogs/news/internet-free-sagemaker/)
+### [MLflow と Amazon SageMaker による機械学習のライフサイクル管理](https://aws.amazon.com/jp/blogs/news/machine-learning-managing-your-machine-learning-lifecycle-with-mlflow-and-amazon-sagemaker/)
+- アーキテクチャの概要
+  - MLflow TrackingサーバーをDocker化し、Fargate上でホストする
+  - MLflow TrackingサーバーのアーティファクトストアとしてS3バケットを、バックエンドストアとして Amazon RDS for MySQL インスタンスを使用
+  - <p align='center'><img src='./img/README_2023-05-04-16-21-18.png' width='70%'></p>
+### [Building, automating, managing, and scaling ML workflows using Amazon SageMaker Pipelines](https://aws.amazon.com/jp/blogs/machine-learning/building-automating-managing-and-scaling-ml-workflows-using-amazon-sagemaker-pipelines/)
+- <p align='center'><img src='./img/README_2023-05-04-16-26-30.png' width='70%'></p>
+- <p align='center'><img src='./img/README_2023-05-04-16-26-49.png' width='70%'></p>
+### [AWS Black Belt ML Enablement Series](https://aws.amazon.com/jp/blogs/news/tag/ml-enablement-series/)
+- 印象に残った箇所のみキャプチャ
+- [【ML-Ligiht-01】機械学習モデル開発プロジェクトの進め方](https://pages.awscloud.com/rs/112-TZM-766/images/202205_AWS_Black_Belt_AWS_AIML_Light_01_Introduction.pdf)
+  - <p align='center'><img src='./img/README_2023-04-30-16-24-10.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-16-23-01.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-16-05-38.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-16-03-03.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-16-03-39.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-16-09-38.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-16-12-15.png' width='70%'></p>
+- [【ML-Ligiht-02】機械学習モデルの開発環境を構築する](https://pages.awscloud.com/rs/112-TZM-766/images/202206_AWS_Black_Belt_AWS_AIML_Light_02_EnvironmentSetup.pdf)
+  - <p align='center'><img src='./img/README_2023-04-30-16-45-57.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-16-45-31.png' width='70%'></p>
+  - [開発環境構築手順書の例](https://docs.wantedly.dev/fields/dev-tools/codespaces)
+  - <p align='center'><img src='./img/README_2023-04-30-17-03-48.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-07-50.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-09-26.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-09-55.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-10-15.png' width='70%'></p>
+- [【ML-Dark-01】Amazon SageMaker Training 機械学習のモデル開発の試行錯誤を簡単にする](https://pages.awscloud.com/rs/112-TZM-766/images/202205_AWS_Black_Belt_AIML_Dark_01_AmazonSageMakerTraining.pdf)
+  - <p align='center'><img src='./img/README_2023-04-30-17-30-25.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-33-22.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-33-43.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-36-09.png' width='70%'></p>
+- [【ML-Dark-02】Amazon SageMakerによる実験管理](https://pages.awscloud.com/rs/112-TZM-766/images/202207_AWS_Black_Belt_AWS_AIML_Dark_02_Experiments_Management.pdf)
+  - <p align='center'><img src='./img/README_2023-05-03-15-38-33.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-15-44-43.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-46-49.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-51-06.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-51-25.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-51-42.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-52-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-52-33.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-56-31.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-56-47.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-57-06.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-04-30-17-57-29.png' width='70%'></p>
+- [【ML-Dark-03】Amazon SageMaker 推論 Part1 推論の頻出課題とSageMakerによる解決方法](https://pages.awscloud.com/rs/112-TZM-766/images/202208_AWS_Black_Belt_AWS_ML_Enablement_Dark_03.pdf)
+  - <p align='center'><img src='./img/README_2023-05-03-15-40-34.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-14-51-25.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-14-53-01.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-14-53-54.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-14-54-17.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-14-56-37.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-15-01-25.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-15-01-41.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-15-02-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-15-03-49.png' width='70%'></p>
+- [【ML-Dark-04】Amazon SageMaker 推論 Part2 すぐにプロダクション利用できる！モデルをデプロイして推論する方法](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Inference-Part-2_0831_v1.pdf)
+  - <p align='center'><img src='./img/README_2023-05-03-15-41-03.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-15-24-34.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-15-25-20.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-15-27-48.png' width='70%'></p>
+- [【ML-Dark-05】Amazon SageMaker 推論 Part3 もう悩まない︕機械学習モデルのデプロイパターンと戦略](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Inference-Part-3_1014_v1.pdf)
+  - <p align='center'><img src='./img/README_2023-05-03-15-36-44.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-15-42-31.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-03-15-43-50.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-15-48-46.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-15-49-04.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-15-49-22.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-15-58-47.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-15-59-04.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-15-59-37.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-00-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-00-28.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-00-54.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-05-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-05-28.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-06-09.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-06-36.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-07-07.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-07-32.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-55-55.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-56-47.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-57-08.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-57-29.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-57-51.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-16-58-17.png' width='70%'></p>
+- [【ML-Dark-07】Amazon SageMaker モニタリング Part1 Amazon SageMaker Model Monitorを理解しよう](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Monitoring-Part-1_1031_v1.pdf)
+  - <p align='center'><img src='./img/README_2023-05-04-17-24-12.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-17-25-07.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-17-26-12.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-17-26-30.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-17-39-43.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-17-39-17.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-17-40-25.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-04-17-40-48.png' width='70%'></p>
+  - ベースラインジョブ
+    - ベースラインデータを作成するためのジョブ
+    - ベースライン
+      - 推論時の入出力結果と比較するための基準となる情報
+      - 主にモデルトレーニング時点の学習データを基にして作成する
+  - モニタリングジョブ
+    - ベースラインデータと推論リクエスト、レスポンスデータを比較するジョブ
+  - Ground Truth(正解データ)マージジョブ
+    - モデル品質とモデルバイアスをモニタリングする場合に必要なマージデータを作成するジョブ
+  - <p align='center'><img src='./img/README_2023-05-05-16-27-23.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-38-44.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-38-59.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-39-30.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-39-49.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-40-17.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-41-20.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-41-35.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-44-53.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-51-38.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-51-53.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-53-44.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-54-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-16-54-24.png' width='70%'></p>
+- [【ML-Dark-08】Amazon SageMaker モニタリング Part2 データと推論結果の変化に気づく](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2022_Amazon-SageMaker-Monitoring-Part-2_1231_v1.pdf)
+  - <p align='center'><img src='./img/README_2023-05-05-17-01-53.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-15-47.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-16-13.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-16-28.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-17-04.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-18-58.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-21-51.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-24-28.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-25-22.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-28-14.png' width='70%'></p>
+- [【ML-Dark-08】Amazon SageMaker モニタリング Part3 バイアス、Feature Attributionをモニタしよう](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2023_Amazon-SageMaker-Monitoring-Part-3_0228_v1.pdf)
+  - <p align='center'><img src='./img/README_2023-05-05-17-01-53.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-30-24.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-31-15.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-36-42.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-36-58.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-05-17-37-14.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-06-18-03-06.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-06-18-10-00.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-06-18-24-36.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-06-18-24-54.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-06-18-25-19.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-06-18-25-34.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-06-18-27-26.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-06-18-28-06.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-06-18-28-27.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-06-18-30-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-06-18-30-35.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-06-18-30-56.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-06-18-31-15.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-06-18-31-32.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2023-05-06-18-31-58.png' width='70%'></p>
