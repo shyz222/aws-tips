@@ -4,13 +4,14 @@
 - [背景](#背景)
 - [参考](#参考)
 - [内容](#内容)
+  - [Amazon Bedrock Overview 【Amazon Bedrock Series #01】](#amazon-bedrock-overview-amazon-bedrock-series-01)
 # 目的
 - Bedrockのキャッチアップ
 # 背景
 # 参考
 - [Amazon Bedrock Overview 【Amazon Bedrock Series #01】](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2024_Amazon-Bedrock-Overview_v1.pdf)
 # 内容
-- [Amazon Bedrock Overview 【Amazon Bedrock Series #01】](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2024_Amazon-Bedrock-Overview_v1.pdf)
+## [Amazon Bedrock Overview 【Amazon Bedrock Series #01】](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2024_Amazon-Bedrock-Overview_v1.pdf)
   - <p align='center'><img src='./img/README-template_2024-10-27-14-16-29.png' width='70%'></p>
   - <p align='center'><img src='./img/README-template_2024-10-27-14-32-03.png' width='70%'></p>
   - <p align='center'><img src='./img/README-template_2024-10-27-15-24-11.png' width='70%'></p>
