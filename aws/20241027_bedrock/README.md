@@ -1,17 +1,14 @@
 # 目次
 - [目次](#目次)
-- [目的](#目的)
 - [背景](#背景)
 - [参考](#参考)
 - [内容](#内容)
   - [Amazon Bedrock Overview 【Amazon Bedrock Series #01】](#amazon-bedrock-overview-amazon-bedrock-series-01)
   - [LLMOps:ΔMLOps by MS ito shunta](#llmopsδmlops-by-ms-ito-shunta)
   - [Amazon Bedrock モデル推論 a.準備編 【Amazon Bedrock Series #02a】](#amazon-bedrock-モデル推論-a準備編-amazon-bedrock-series-02a)
-# 目的
-- Bedrockのキャッチアップ
 # 背景
 # 参考
-- [Amazon Bedrock Overview 【Amazon Bedrock Series #01】](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2024_Amazon-Bedrock-Overview_v1.pdf)
+- [プロンプトエンジニアリングによる、Amazon Bedrock でのセキュアな RAG アプリケーション](https://aws.amazon.com/jp/blogs/news/secure-rag-applications-using-prompt-engineering-on-amazon-bedrock/)
 # 内容
 ## [Amazon Bedrock Overview 【Amazon Bedrock Series #01】](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2024_Amazon-Bedrock-Overview_v1.pdf)
   - <p align='center'><img src='./img/README-template_2024-10-27-14-16-29.png' width='70%'></p>
@@ -43,5 +40,54 @@
   - <p align='center'><img src='./img/README_2024-10-27-17-04-10.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-10-27-17-11-48.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-10-27-17-12-43.png' width='70%'></p>
-  - 
+  - <p align='center'><img src='./img/README_2024-11-02-16-48-05.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-16-48-36.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-16-49-31.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-16-52-35.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-16-52-59.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-16-55-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-16-56-42.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-16-59-45.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-01-14.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-02-21.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-02-56.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-04-05.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-05-53.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-13-23.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-14-06.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-15-04.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-22-29.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-22-47.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-23-10.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-24-54.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-29-51.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-30-34.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-31-56.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-32-24.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-33-28.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-34-14.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-36-43.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-38-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-47-02.png' width='70%'></p>
 ## [Amazon Bedrock モデル推論 a.準備編 【Amazon Bedrock Series #02a】](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2024_Amazon-Bedrock-Model-Inference-a_0909_v1.pdf)
+  - <p align='center'><img src='./img/README_2024-11-02-17-57-24.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-57-52.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-58-12.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-58-50.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-17-59-25.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-00-09.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-00-26.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-01-10.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-01-25.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-01-41.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-03-08.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-03-39.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-04-17.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-04-31.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-05-25.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-09-52.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-10-18.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-10-54.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-11-29.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-11-52.png' width='70%'></p>
+  - 
