@@ -90,4 +90,11 @@
   - <p align='center'><img src='./img/README_2024-11-02-18-10-54.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-02-18-11-29.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-02-18-11-52.png' width='70%'></p>
-  - 
+  - <p align='center'><img src='./img/README_2024-11-02-18-14-15.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-14-29.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-15-12.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-15-43.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-16-11.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-16-59.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-17-13.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-02-18-17-57.png' width='70%'></p>
