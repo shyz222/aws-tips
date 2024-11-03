@@ -6,9 +6,12 @@
   - [Amazon Bedrock Overview 【Amazon Bedrock Series #01】](#amazon-bedrock-overview-amazon-bedrock-series-01)
   - [LLMOps:ΔMLOps by MS ito shunta](#llmopsδmlops-by-ms-ito-shunta)
   - [Amazon Bedrock モデル推論 a.準備編 【Amazon Bedrock Series #02a】](#amazon-bedrock-モデル推論-a準備編-amazon-bedrock-series-02a)
+  - [Amazon Bedrock モデル推論 b.実践編 【Amazon Bedrock Series #02b】](#amazon-bedrock-モデル推論-b実践編-amazon-bedrock-series-02b)
+  - [Amazon Bedrock Agents 自律型 AI の実現に向けて: 検討編 【Amazon Bedrock Series #04a】](#amazon-bedrock-agents-自律型-ai-の実現に向けて-検討編-amazon-bedrock-series-04a)
 # 背景
 # 参考
 - [プロンプトエンジニアリングによる、Amazon Bedrock でのセキュアな RAG アプリケーション](https://aws.amazon.com/jp/blogs/news/secure-rag-applications-using-prompt-engineering-on-amazon-bedrock/)
+- [【AWS】BedrockのAgentを使ったら1時間弱でRAGを構築できた](https://zenn.dev/ncdc/articles/41bf6e7735ec9f)
 # 内容
 ## [Amazon Bedrock Overview 【Amazon Bedrock Series #01】](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2024_Amazon-Bedrock-Overview_v1.pdf)
   - <p align='center'><img src='./img/README-template_2024-10-27-14-16-29.png' width='70%'></p>
@@ -84,6 +87,7 @@
   - <p align='center'><img src='./img/README_2024-11-02-18-03-39.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-02-18-04-17.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-02-18-04-31.png' width='70%'></p>
+## [Amazon Bedrock モデル推論 b.実践編 【Amazon Bedrock Series #02b】](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2024_Amazon-Bedrock-Model-Inference-b_0909_v1.pdfs)
   - <p align='center'><img src='./img/README_2024-11-02-18-05-25.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-02-18-09-52.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-02-18-10-18.png' width='70%'></p>
@@ -98,3 +102,22 @@
   - <p align='center'><img src='./img/README_2024-11-02-18-16-59.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-02-18-17-13.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-02-18-17-57.png' width='70%'></p>
+## [Amazon Bedrock Agents 自律型 AI の実現に向けて: 検討編 【Amazon Bedrock Series #04a】](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2024_Amazon-Bedrock-Agents_0930_v1.pdf)
+  - <p align='center'><img src='./img/README_2024-11-03-14-51-47.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-14-52-11.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-14-52-29.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-14-52-44.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-14-54-21.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-00-23.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-01-34.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-01-51.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-02-12.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-04-41.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-04-53.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-05-08.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-07-14.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-07-27.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-07-45.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-07-59.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-08-16.png' width='70%'></p>
+  - 
