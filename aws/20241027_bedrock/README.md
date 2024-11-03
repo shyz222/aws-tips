@@ -8,6 +8,7 @@
   - [Amazon Bedrock モデル推論 a.準備編 【Amazon Bedrock Series #02a】](#amazon-bedrock-モデル推論-a準備編-amazon-bedrock-series-02a)
   - [Amazon Bedrock モデル推論 b.実践編 【Amazon Bedrock Series #02b】](#amazon-bedrock-モデル推論-b実践編-amazon-bedrock-series-02b)
   - [Amazon Bedrock Agents 自律型 AI の実現に向けて: 検討編 【Amazon Bedrock Series #04a】](#amazon-bedrock-agents-自律型-ai-の実現に向けて-検討編-amazon-bedrock-series-04a)
+  - [Amazon Bedrock Knowledge Bases](#amazon-bedrock-knowledge-bases)
 # 背景
 # 参考
 - [プロンプトエンジニアリングによる、Amazon Bedrock でのセキュアな RAG アプリケーション](https://aws.amazon.com/jp/blogs/news/secure-rag-applications-using-prompt-engineering-on-amazon-bedrock/)
@@ -120,4 +121,42 @@
   - <p align='center'><img src='./img/README_2024-11-03-15-07-45.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-03-15-07-59.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-03-15-08-16.png' width='70%'></p>
-  - 
+## [Amazon Bedrock Knowledge Bases](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2024_Amazon-Bedrock-Knowledge-Bases_0920_v1.pdf)
+  - <p align='center'><img src='./img/README_2024-11-03-15-34-33.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-36-33.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-35-46.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-35-58.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-37-01.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-41-57.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-42-11.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-42-26.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-43-03.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-43-16.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-43-51.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-44-05.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-44-19.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-52-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-15-52-16.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-07-41.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-08-21.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-09-45.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-10-05.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-15-45.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-16-00.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-22-35.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-29-43.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-30-19.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-30-31.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-30-45.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-31-00.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-31-12.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-33-31.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-34-30.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-34-41.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-35-03.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-35-16.png' width='70%'></p> 
+  - <p align='center'><img src='./img/README_2024-11-03-16-39-57.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-40-10.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-40-40.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-40-54.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-03-16-41-15.png' width='70%'></p>
