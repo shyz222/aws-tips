@@ -9,6 +9,8 @@
   - [Amazon Bedrock モデル推論 b.実践編 【Amazon Bedrock Series #02b】](#amazon-bedrock-モデル推論-b実践編-amazon-bedrock-series-02b)
   - [Amazon Bedrock Agents 自律型 AI の実現に向けて: 検討編 【Amazon Bedrock Series #04a】](#amazon-bedrock-agents-自律型-ai-の実現に向けて-検討編-amazon-bedrock-series-04a)
   - [Amazon Bedrock Knowledge Bases](#amazon-bedrock-knowledge-bases)
+  - [GenOps: 生成 AI 向けに MLOps が進化](#genops-生成-ai-向けに-mlops-が進化)
+  - [GenOps: マイクロサービスと従来の DevOps の世界から学ぶ](#genops-マイクロサービスと従来の-devops-の世界から学ぶ)
 # 背景
 # 参考
 - [プロンプトエンジニアリングによる、Amazon Bedrock でのセキュアな RAG アプリケーション](https://aws.amazon.com/jp/blogs/news/secure-rag-applications-using-prompt-engineering-on-amazon-bedrock/)
@@ -160,3 +162,14 @@
   - <p align='center'><img src='./img/README_2024-11-03-16-40-40.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-03-16-40-54.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-03-16-41-15.png' width='70%'></p>
+## [GenOps: 生成 AI 向けに MLOps が進化](https://cloud.google.com/blog/ja/products/ai-machine-learning/learn-how-to-build-and-scale-generative-ai-solutions-with-genops)
+  - <p align='center'><img src='./img/README_2024-11-09-14-14-47.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-09-14-17-09.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-09-14-24-31.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-09-14-25-57.png' width='70%'></p>
+## [GenOps: マイクロサービスと従来の DevOps の世界から学ぶ](https://cloud.google.com/blog/ja/products/devops-sre/genops-learnings-from-microservices-and-traditional-devops)
+  - <p align='center'><img src='./img/README_2024-11-09-14-56-04.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-09-14-56-32.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-09-15-02-22.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-09-15-05-08.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-09-15-05-23.png' width='70%'></p>s
