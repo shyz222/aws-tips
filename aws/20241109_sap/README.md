@@ -8,6 +8,7 @@
     - [Cloudfrontのデザインパターン](#cloudfrontのデザインパターン)
     - [DynaomDBのRCU(Read Capacity Units)/WCU(Write Capacity Units)について](#dynaomdbのrcuread-capacity-unitswcuwrite-capacity-unitsについて)
     - [S3のストレージクラスについて](#s3のストレージクラスについて)
+    - [ALBと　NLBの比較・ユースケース](#albとnlbの比較ユースケース)
   - [CloudTech](#cloudtech)
 # 目的
 - SAPの取り直し
@@ -40,6 +41,13 @@
   - <p align='center'><img src='./img/README_2024-11-10-13-48-56.png' width='70%'></p>
 - [6つのS3ストレージクラスの選択に迷った時みるチャートをつくってみた 2021/3](https://dev.classmethod.jp/articles/should_i_choice_s3_storage_class/)
   - <p align='center'><img src='./img/README_2024-11-10-13-50-22.png' width='70%'></p>
+### ALBと　NLBの比較・ユースケース
+  - [AWSのロードバランサーとは？　ALB・NLBの違いと用途について](https://business.ntt-east.co.jp/content/cloudsolution/ih_column-26.html)
+    - <p align='center'><img src='./img/README_2024-11-10-14-17-56.png' width='70%'></p>
+  - [【初学者向け】ロードバランサーの基本機能とAWS ALBとNLBを機能比較してみた](https://zenn.dev/aws_gissan/articles/2f6da88e0bc9b8)
+    - <p align='center'><img src='./img/README_2024-11-10-14-18-44.png' width='70%'></p>
+  - [NLBっていつ使うの？](https://qiita.com/shou0205/items/597ed2b38d77f40bd72b)
+    - <p align='center'><img src='./img/README_2024-11-10-14-19-40.png' width='70%'></p>
 
 ## CloudTech
 - <p align='center'><img src='./img/README_2024-11-09-15-36-14.png' width='70%'></p>
@@ -70,4 +78,5 @@
 - <p align='center'><img src='./img/README_2024-11-10-13-19-50.png' width='70%'></p>
 - <p align='center'><img src='./img/README_2024-11-10-13-22-19.png' width='70%'></p>
 - <p align='center'><img src='./img/README_2024-11-10-13-24-27.png' width='70%'></p>
+- <p align='center'><img src='./img/README_2024-11-10-13-52-55.png' width='70%'></p>
 - 
