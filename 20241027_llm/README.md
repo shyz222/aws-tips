@@ -196,9 +196,60 @@
 ### [Azure Databricks を使用して MLOps を調整する](https://learn.microsoft.com/ja-jp/azure/architecture/ai-ml/idea/orchestrate-machine-learning-azure-databricks)
   - <p align='center'><img src='./img/README_2024-11-09-15-23-54.png' width='70%'></p>
 ### [マルチモーダル/AI Agent/LLMOps 3つの技術トレンドで理解するLLMの今後の展望](https://speakerdeck.com/hirosatogamo/llmops-3tunoji-shu-torendodeli-jie-surullmnojin-hou-nozhan-wang)
+  - <p align='center'><img src='./img/README_2024-11-17-15-42-49.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-17-14-59-19.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-17-15-02-52.png' width='70%'></p>
-  - 
+  - <p align='center'><img src='./img/README_2024-11-17-15-20-43.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-39-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-41-05.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-43-30.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-43-44.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-44-32.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-45-53.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-48-39.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-48-56.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-51-36.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-52-20.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-52-44.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-55-21.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-55-54.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-56-56.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-57-51.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-16-01-14.png' width='70%'></p>
+  - [※Sentiment分析とは](https://aws.amazon.com/jp/what-is/sentiment-analysis/)
+  - <p align='center'><img src='./img/README_2024-11-17-16-20-11.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-16-21-29.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-16-21-42.png' width='70%'></p>
 ### [ChatGPT - LLMシステム開発大全](https://speakerdeck.com/hirosatogamo/chatgpt-azure-openai-da-quan)
+  - <u>**※絞ってキャプチャしているが全部必読レベルのものなのでリンク先をみるべき**<u/>
+  - <p align='center'><img src='./img/README_2024-11-17-16-24-59.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-16-25-25.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-19-15.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-20-17.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-21-13.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-23-01.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-23-35.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-24-18.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-25-56.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-26-43.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-27-39.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-28-21.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-28-58.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-29-23.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-34-03.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-39-37.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-40-29.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-41-17.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-41-52.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-42-54.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-45-39.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-46-17.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-46-32.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-47-07.png' width='70%'></p>
+  - [Azure OpenAI Service の クォータ管理詳細](https://zenn.dev/microsoft/articles/be24a299f46a4d)
+  - <p align='center'><img src='./img/README_2024-11-17-17-49-43.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-50-49.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-51-16.png' width='70%'></p>
+  - 
 ### [AOAI Dev Day LLMシステム開発 Tips集](https://speakerdeck.com/hirosatogamo/aoai-dev-day-llmsisutemukai-fa-tipsji)
 ### []()
