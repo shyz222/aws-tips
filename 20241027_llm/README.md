@@ -206,7 +206,20 @@
   - <p align='center'><img src='./img/README_2024-11-17-15-43-44.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-17-15-44-32.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-17-15-45-53.png' width='70%'></p>
-  - 
+  - <p align='center'><img src='./img/README_2024-11-17-15-48-39.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-48-56.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-51-36.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-52-20.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-52-44.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-55-21.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-55-54.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-56-56.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-57-51.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-16-01-14.png' width='70%'></p>
+  - [※Sentiment分析とは](https://aws.amazon.com/jp/what-is/sentiment-analysis/)
+  - <p align='center'><img src='./img/README_2024-11-17-16-20-11.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-16-21-29.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-16-21-42.png' width='70%'></p>
 ### [ChatGPT - LLMシステム開発大全](https://speakerdeck.com/hirosatogamo/chatgpt-azure-openai-da-quan)
 ### [AOAI Dev Day LLMシステム開発 Tips集](https://speakerdeck.com/hirosatogamo/aoai-dev-day-llmsisutemukai-fa-tipsji)
 ### []()
