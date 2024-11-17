@@ -221,7 +221,7 @@
   - <p align='center'><img src='./img/README_2024-11-17-16-21-29.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-17-16-21-42.png' width='70%'></p>
 ### [ChatGPT - LLMシステム開発大全](https://speakerdeck.com/hirosatogamo/chatgpt-azure-openai-da-quan)
-  - ※絞ってキャプチャしているが全部必読レベルのものなのでリンク先をみるべき
+  - <u>**※絞ってキャプチャしているが全部必読レベルのものなのでリンク先をみるべき**<u/>
   - <p align='center'><img src='./img/README_2024-11-17-16-24-59.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-17-16-25-25.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-17-17-19-15.png' width='70%'></p>
@@ -236,6 +236,20 @@
   - <p align='center'><img src='./img/README_2024-11-17-17-28-21.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-17-17-28-58.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-17-17-29-23.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-34-03.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-39-37.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-40-29.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-41-17.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-41-52.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-42-54.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-45-39.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-46-17.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-46-32.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-47-07.png' width='70%'></p>
+  - [Azure OpenAI Service の クォータ管理詳細](https://zenn.dev/microsoft/articles/be24a299f46a4d)
+  - <p align='center'><img src='./img/README_2024-11-17-17-49-43.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-50-49.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-51-16.png' width='70%'></p>
   - 
 ### [AOAI Dev Day LLMシステム開発 Tips集](https://speakerdeck.com/hirosatogamo/aoai-dev-day-llmsisutemukai-fa-tipsji)
 ### []()
