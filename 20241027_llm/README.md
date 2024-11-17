@@ -196,8 +196,16 @@
 ### [Azure Databricks を使用して MLOps を調整する](https://learn.microsoft.com/ja-jp/azure/architecture/ai-ml/idea/orchestrate-machine-learning-azure-databricks)
   - <p align='center'><img src='./img/README_2024-11-09-15-23-54.png' width='70%'></p>
 ### [マルチモーダル/AI Agent/LLMOps 3つの技術トレンドで理解するLLMの今後の展望](https://speakerdeck.com/hirosatogamo/llmops-3tunoji-shu-torendodeli-jie-surullmnojin-hou-nozhan-wang)
+  - <p align='center'><img src='./img/README_2024-11-17-15-42-49.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-17-14-59-19.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-17-15-02-52.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-20-43.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-39-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-41-05.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-43-30.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-43-44.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-44-32.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-45-53.png' width='70%'></p>
   - 
 ### [ChatGPT - LLMシステム開発大全](https://speakerdeck.com/hirosatogamo/chatgpt-azure-openai-da-quan)
 ### [AOAI Dev Day LLMシステム開発 Tips集](https://speakerdeck.com/hirosatogamo/aoai-dev-day-llmsisutemukai-fa-tipsji)
