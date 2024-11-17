@@ -79,4 +79,7 @@
 - <p align='center'><img src='./img/README_2024-11-10-13-22-19.png' width='70%'></p>
 - <p align='center'><img src='./img/README_2024-11-10-13-24-27.png' width='70%'></p>
 - <p align='center'><img src='./img/README_2024-11-10-13-52-55.png' width='70%'></p>
-- 
+- <p align='center'><img src='./img/README_2024-11-10-14-20-29.png' width='70%'></p>
+- <p align='center'><img src='./img/README_2024-11-10-14-29-48.png' width='70%'></p>
+- <p align='center'><img src='./img/README_2024-11-10-14-34-03.png' width='70%'></p>
+- <p align='center'><img src='./img/README_2024-11-10-14-43-25.png' width='70%'></p>
