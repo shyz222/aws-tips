@@ -1,5 +1,6 @@
 # 目次
 - [目次](#目次)
+- [目的](#目的)
 - [背景](#背景)
 - [参考](#参考)
 - [内容](#内容)
@@ -21,6 +22,8 @@
     - [ChatGPT - LLMシステム開発大全](#chatgpt---llmシステム開発大全)
     - [AOAI Dev Day LLMシステム開発 Tips集](#aoai-dev-day-llmシステム開発-tips集)
     - [](#)
+# 目的
+- LLMOpsの勉強
 # 背景
 # 参考
 - [プロンプトエンジニアリングによる、Amazon Bedrock でのセキュアな RAG アプリケーション](https://aws.amazon.com/jp/blogs/news/secure-rag-applications-using-prompt-engineering-on-amazon-bedrock/)
@@ -194,6 +197,7 @@
   - <p align='center'><img src='./img/README_2024-11-09-15-23-54.png' width='70%'></p>
 ### [マルチモーダル/AI Agent/LLMOps 3つの技術トレンドで理解するLLMの今後の展望](https://speakerdeck.com/hirosatogamo/llmops-3tunoji-shu-torendodeli-jie-surullmnojin-hou-nozhan-wang)
   - <p align='center'><img src='./img/README_2024-11-17-14-59-19.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-15-02-52.png' width='70%'></p>
   - 
 ### [ChatGPT - LLMシステム開発大全](https://speakerdeck.com/hirosatogamo/chatgpt-azure-openai-da-quan)
 ### [AOAI Dev Day LLMシステム開発 Tips集](https://speakerdeck.com/hirosatogamo/aoai-dev-day-llmsisutemukai-fa-tipsji)
