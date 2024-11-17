@@ -221,5 +221,21 @@
   - <p align='center'><img src='./img/README_2024-11-17-16-21-29.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-17-16-21-42.png' width='70%'></p>
 ### [ChatGPT - LLMシステム開発大全](https://speakerdeck.com/hirosatogamo/chatgpt-azure-openai-da-quan)
+  - ※絞ってキャプチャしているが全部必読レベルのものなのでリンク先をみるべき
+  - <p align='center'><img src='./img/README_2024-11-17-16-24-59.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-16-25-25.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-19-15.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-20-17.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-21-13.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-23-01.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-23-35.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-24-18.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-25-56.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-26-43.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-27-39.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-28-21.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-28-58.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-17-17-29-23.png' width='70%'></p>
+  - 
 ### [AOAI Dev Day LLMシステム開発 Tips集](https://speakerdeck.com/hirosatogamo/aoai-dev-day-llmsisutemukai-fa-tipsji)
 ### []()
