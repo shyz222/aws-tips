@@ -28,6 +28,7 @@
 # 参考
 - [プロンプトエンジニアリングによる、Amazon Bedrock でのセキュアな RAG アプリケーション](https://aws.amazon.com/jp/blogs/news/secure-rag-applications-using-prompt-engineering-on-amazon-bedrock/)
 - [【AWS】BedrockのAgentを使ったら1時間弱でRAGを構築できた](https://zenn.dev/ncdc/articles/41bf6e7735ec9f)
+- [RAG の精度を向上させる Advanced RAG on AWS の道標](https://aws.amazon.com/jp/blogs/news/a-practical-guide-to-improve-rag-systems-with-advanced-rag-on-aws/)
 # 内容
 ## AWS
 ### [Amazon Bedrock Overview 【Amazon Bedrock Series #01】](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2024_Amazon-Bedrock-Overview_v1.pdf)
