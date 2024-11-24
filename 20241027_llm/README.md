@@ -264,6 +264,9 @@
   - <p align='center'><img src='./img/README_2024-11-24-13-31-02.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-24-13-31-23.png' width='70%'></p>
 ### [Azure AI Document Intelligence を使用した取得拡張生成](https://learn.microsoft.com/ja-jp/azure/ai-services/document-intelligence/concept/retrieval-augmented-generation?view=doc-intel-3.1.0)
-  - pdfをマークダウン形式にして取り込む。表の情報もうまく取り込める。
+  - pdfのテキスト化改善。マークダウン形式にして取り込む。表の情報もうまく取り込める。
   - <p align='center'><img src='./img/README_2024-11-24-14-06-22.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-24-14-07-03.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-24-14-10-03.png' width='70%'></p>
+  - あとはOCR(Optical Character Recognition)と組み合わせる方法もある。
+  - <p align='center'><img src='./img/README_2024-11-24-14-11-01.png' width='70%'></p>
