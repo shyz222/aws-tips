@@ -25,6 +25,8 @@
     - [Azure AI Document Intelligence を使用した取得拡張生成](#azure-ai-document-intelligence-を使用した取得拡張生成)
   - [RAI/セキュリティ/攻撃と対策](#raiセキュリティ攻撃と対策)
     - [OWASP Top 10 for LLM Applications 2025](#owasp-top-10-for-llm-applications-2025)
+    - [AzureのRAI・セキュリティ関連](#azureのraiセキュリティ関連)
+    - [GDPR(General Data Protection Regulation, EU一般データ保護規則)](#gdprgeneral-data-protection-regulation-eu一般データ保護規則)
 # 目的
 - LLMOpsの勉強
 # 背景
@@ -291,3 +293,9 @@
 - 日本語の参考
   - [『OWASP Top 10 for LLM Applications 2025』を読む](https://zenn.dev/kimitsu/scraps/ef20f73946f521)
   - [OWASP Top 10 for LLMでLLM Applicationsのセキュリティについて学ぶ](https://zenn.dev/loglass/articles/41b1b4e809aac9)
+
+### AzureのRAI・セキュリティ関連
+- <p align='center'><img src='./img/README_2024-11-24-15-24-42.png' width='70%'></p>
+
+### GDPR(General Data Protection Regulation, EU一般データ保護規則)
+- <p align='center'><img src='./img/README_2024-11-24-15-25-28.png' width='70%'></p>
