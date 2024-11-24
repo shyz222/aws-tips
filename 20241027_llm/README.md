@@ -21,7 +21,7 @@
     - [マルチモーダル/AI Agent/LLMOps 3つの技術トレンドで理解するLLMの今後の展望](#マルチモーダルai-agentllmops-3つの技術トレンドで理解するllmの今後の展望)
     - [ChatGPT - LLMシステム開発大全](#chatgpt---llmシステム開発大全)
     - [AOAI Dev Day LLMシステム開発 Tips集](#aoai-dev-day-llmシステム開発-tips集)
-    - [](#)
+    - [Introducing Azure AI Agent Service(2024/11/19)](#introducing-azure-ai-agent-service20241119)
 # 目的
 - LLMOpsの勉強
 # 背景
@@ -31,6 +31,8 @@
 - [RAG の精度を向上させる Advanced RAG on AWS の道標](https://aws.amazon.com/jp/blogs/news/a-practical-guide-to-improve-rag-systems-with-advanced-rag-on-aws/)
 - [サクッと始めるプロンプトエンジニアリング【LangChain / ChatGPT】](https://zenn.dev/umi_mori/books/prompt-engineer)
 - [Azure AI services Blog](https://techcommunity.microsoft.com/category/ai/blog/azure-ai-services-blog)
+  - [Azure AI Search: Outperforming vector search with hybrid retrieval and reranking](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/azure-ai-search-outperforming-vector-search-with-hybrid-retrieval-and-reranking/3929167)
+  - [Prep your Data for RAG with Azure AI Search: Content Layout, Markdown Parsing & Improved Security](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/prep-your-data-for-rag-with-azure-ai-search-content-layout-markdown-parsing--imp/4303538)
 # 内容
 ## AWS
 ### [Amazon Bedrock Overview 【Amazon Bedrock Series #01】](https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2024_Amazon-Bedrock-Overview_v1.pdf)
@@ -255,4 +257,8 @@
   - <p align='center'><img src='./img/README_2024-11-17-17-51-16.png' width='70%'></p>
   - 
 ### [AOAI Dev Day LLMシステム開発 Tips集](https://speakerdeck.com/hirosatogamo/aoai-dev-day-llmsisutemukai-fa-tipsji)
-### []()
+### [Introducing Azure AI Agent Service(2024/11/19)](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-azure-ai-agent-service/4298357)
+  - 来月(2024/12)プレビュー
+  - 参考：[【Ignite 2024 速報】新たな AI エージェント開発機能 「Azure AI Agent Service」 を発表し、Azure AI Foundry に統合 など](https://qiita.com/nohanaga/items/d3cc240758e41ee3ec3f)
+  - <p align='center'><img src='./img/README_2024-11-24-13-31-02.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-24-13-31-23.png' width='70%'></p>
