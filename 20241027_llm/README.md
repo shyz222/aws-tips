@@ -22,6 +22,7 @@
     - [ChatGPT - LLMシステム開発大全](#chatgpt---llmシステム開発大全)
     - [AOAI Dev Day LLMシステム開発 Tips集](#aoai-dev-day-llmシステム開発-tips集)
     - [Introducing Azure AI Agent Service(2024/11/19)](#introducing-azure-ai-agent-service20241119)
+    - [Azure AI Document Intelligence を使用した取得拡張生成](#azure-ai-document-intelligence-を使用した取得拡張生成)
 # 目的
 - LLMOpsの勉強
 # 背景
@@ -262,3 +263,7 @@
   - 参考：[【Ignite 2024 速報】新たな AI エージェント開発機能 「Azure AI Agent Service」 を発表し、Azure AI Foundry に統合 など](https://qiita.com/nohanaga/items/d3cc240758e41ee3ec3f)
   - <p align='center'><img src='./img/README_2024-11-24-13-31-02.png' width='70%'></p>
   - <p align='center'><img src='./img/README_2024-11-24-13-31-23.png' width='70%'></p>
+### [Azure AI Document Intelligence を使用した取得拡張生成](https://learn.microsoft.com/ja-jp/azure/ai-services/document-intelligence/concept/retrieval-augmented-generation?view=doc-intel-3.1.0)
+  - pdfをマークダウン形式にして取り込む。表の情報もうまく取り込める。
+  - <p align='center'><img src='./img/README_2024-11-24-14-06-22.png' width='70%'></p>
+  - <p align='center'><img src='./img/README_2024-11-24-14-07-03.png' width='70%'></p>
