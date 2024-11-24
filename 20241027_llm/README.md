@@ -24,6 +24,7 @@
     - [Introducing Azure AI Agent Service(2024/11/19)](#introducing-azure-ai-agent-service20241119)
     - [Azure AI Document Intelligence を使用した取得拡張生成](#azure-ai-document-intelligence-を使用した取得拡張生成)
   - [RAI/セキュリティ/攻撃と対策](#raiセキュリティ攻撃と対策)
+    - [OWASP Top 10 for LLM Applications 2025](#owasp-top-10-for-llm-applications-2025)
 # 目的
 - LLMOpsの勉強
 # 背景
@@ -272,4 +273,21 @@
 - <p align='center'><img src='./img/README_2024-11-24-14-11-01.png' width='70%'></p>
 
 ## RAI/セキュリティ/攻撃と対策
-- []
+### [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/)
+
+| リスク | 概要 | 誰が気をつける | 備考 |
+| --------------------------- | ---------------------------------------------- | ------------ | --- |
+| LLM01:2025 Prompt Injection | プロンプトを用いてLLMの動作や出力に悪影響を与える脆弱性 | developer |  |
+| LLM02:2025 Sensitive Information Disclosure | モデルが機密情報を出力する脆弱性 | platformer | 入力情報が学習 に利用されないことを確認すればOK |
+| LLM03:2025 Supply Chain | モデルのサプライチェーンを利用した脆弱性 | platformer |  |
+| LLM04:2025 Data and Model Poisoning | 学習データが汚染されることで生じる脆弱性 | platformer |  |
+| LLM05:2025 Improper Output Handling | LLMの出力が他のシステムに入力される際に検証/サニタイズされないことによる脆弱性 | developer |  |
+| LLM06:2025 Excessive Agency | エージェントの機能、権限が過剰なことで生じる脆弱性 | developer |  |
+| LLM07:2025 System Prompt Leakage | プロンプトに含まれる機密情報が漏洩する脆弱性 | developer |  |
+| LLM08:2025 Vector and Embedding Weaknesses | RAG構築時の脆弱性全般 | developer |  |
+| LLM09:2025 Misinformation | ハルシネーション、またはユーザがLLMの出力を過信すること | developer, user |  |
+| LLM10:2025 Unbounded Consumption | LLMのトークンを消費させる脆弱性 | developer |  |
+
+- 日本語の参考
+  - [『OWASP Top 10 for LLM Applications 2025』を読む](https://zenn.dev/kimitsu/scraps/ef20f73946f521)
+  - [OWASP Top 10 for LLMでLLM Applicationsのセキュリティについて学ぶ](https://zenn.dev/loglass/articles/41b1b4e809aac9)
